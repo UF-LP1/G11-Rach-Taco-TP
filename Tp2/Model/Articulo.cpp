@@ -15,7 +15,7 @@
  * @param bool
  * @param string
  */
-void Articulo::Articulo(void string, void bool, void string) {
+void Articulo::Articulo( string,  bool,  string) {
 
 }
 
@@ -23,7 +23,7 @@ void Articulo::Articulo(void string, void bool, void string) {
  * @return float
  */
 float Articulo::get_precio() {
-    return 0.0;
+    return this->precio;
 }
 
 /**
@@ -44,8 +44,8 @@ string Articulo::get_estadoArticulo() {
  * @param float
  * @return void
  */
-void Articulo::set_precio(void float) {
-    return;
+void Articulo::set_precio( float price) {
+    this->precio=price;
 }
 
 void Articulo::get_tipoDeProducto() {

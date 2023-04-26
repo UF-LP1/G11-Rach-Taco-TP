@@ -5,6 +5,7 @@
 
 #include "Ferreteria.h"
 
+
 /**
  * Ferreteria implementation
  */
@@ -43,13 +44,7 @@ bool Ferreteria::get_abierto() {
 /**
  * @return int
  */
-int Ferreteria::generarPresupuesto() {
-    return 0;
-}
 
-void Ferreteria::Ferreteria() {
-
-}
 
 unsigned int Ferreteria::get_precioAlquiler() {
     return this->precioAlquiler;

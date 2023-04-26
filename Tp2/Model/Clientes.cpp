@@ -5,6 +5,7 @@
 
 #include "Clientes.h"
 
+
 /**
  * Clientes implementation
  */
@@ -15,7 +16,7 @@
  * @param string
  * @param string
  */
-void Clientes::Clientes(void string, void string, void string) {
+void Clientes::Clientes( string,  string,  string) {
 
 }
 
@@ -23,7 +24,7 @@ void Clientes::Clientes(void string, void string, void string) {
  * @param precio
  * @return Articulo
  */
-Articulo Clientes::comprar(void precio) {
+Articulo Clientes::comprar( precio) {
     return null;
 }
 
@@ -31,7 +32,7 @@ Articulo Clientes::comprar(void precio) {
  * @param Articulo
  * @return Articulo
  */
-Articulo Clientes::cambiar(void Articulo) {
+Articulo Clientes::cambiar( Articulo) {
     return null;
 }
 
@@ -53,7 +54,7 @@ string Clientes::get_diaDeLlegada() {
  * @param Herramientas
  * @return void
  */
-void Clientes::alquilar(void Herramientas) {
+void Clientes::alquilar( Herramientas) {
     return;
 }
 
@@ -78,11 +79,25 @@ void Clientes::mostrarArtRoto() {
     return;
 }
 
+float Clientes::generarPresupuesto(list<Articulo>art)
+{
+   float presupuesto=0;
+   int i=0;
+   list<Articulo>::iterator itArt = art.begin();
+   list<Herramientas>::iterator itHer = carritoh.begin();
+
+   for (i = 0; i < art.size();i++) {
+       itArt.
+   };
+
+    return 0;
+}
+
 /**
  * @param string
  * @return void
  */
-void Clientes::set_direccion(void string) {
+void Clientes::set_direccion( string) {
     return;
 }
 

@@ -16,7 +16,7 @@
  * @param string
  * @param string
  */
-void Herramientas::Herramientas( float,  float,  string, string) {
+void Herramientas::Herramientas(float,  float,  string, string) {
 
 }
 
@@ -52,7 +52,7 @@ string Herramientas::get_modelo() {
  * @param float
  * @return void
  */
-void Herramientas::set_precioAlquiler(void float) {
+void Herramientas::set_precioAlquiler( float) {
     return;
 }
 
@@ -60,7 +60,7 @@ void Herramientas::set_precioAlquiler(void float) {
  * @param float
  * @return void
  */
-void Herramientas::set_precioSeguro(void float) {
+void Herramientas::set_precioSeguro( float) {
     return;
 }
 
