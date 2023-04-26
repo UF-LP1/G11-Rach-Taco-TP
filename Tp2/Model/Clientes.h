@@ -48,7 +48,7 @@ string get_direccion();
 void mostrarFoto();
     
 void mostrarArtRoto();
-float generarPresupuesto();
+float generarPresupuesto(list<Articulo> art, list<Herramientas> her);
 
     
 /**

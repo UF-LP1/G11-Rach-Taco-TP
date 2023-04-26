@@ -79,18 +79,22 @@ void Clientes::mostrarArtRoto() {
     return;
 }
 
-float Clientes::generarPresupuesto(list<Articulo>art)
+float Clientes::generarPresupuesto(list<Articulo>art , list<Herramientas> her)
 {
    float presupuesto=0;
    int i=0;
    list<Articulo>::iterator itArt = art.begin();
-   list<Herramientas>::iterator itHer = carritoh.begin();
+   list<Herramientas>::iterator itHer = her.begin();
 
    for (i = 0; i < art.size();i++) {
-       itArt.
-   };
+       presupuesto = presupuesto + itArt->get_precio();
 
-    return 0;
+   };
+   for (i = 0; i < her.size(); i++) {
+       presupuesto = presupuesto + itHer->get_precioAlquiler()+ itHer->get_precioSeguro();
+   }
+
+    return presupuesto;
 }
 
 /**
