@@ -21,7 +21,7 @@ public:
  * @param bool
  * @param string
  */
-Articulo( float Precio, bool Cambio,string EstadoArticulo, unsigned int PrecioFab, const string TipoDeProducto, bool Stock);
+Articulo( float Precio, bool Cambio,string EstadoArticulo,  const string TipoDeProducto, bool Stock);
     
 float get_precio();
     
@@ -37,8 +37,7 @@ void set_precio( float);
 void get_tipoDeProducto();
     
 void get_stock();
-void set_precioFab(unsigned int);
-unsigned int get_precioFab();
+
 
 protected: 
     
@@ -47,10 +46,7 @@ private:
     float precio;
     bool cambio;
     string estadoArticulo;
-    unsigned int precioFab;
-    
-       const string tipoDeProducto;
-       
+    const string tipoDeProducto;
     bool stock;
 };
 

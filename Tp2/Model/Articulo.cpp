@@ -15,7 +15,7 @@
  * @param bool
  * @param string
  */
-Articulo:: Articulo(float Precio, bool Cambio, string EstadoArticulo, unsigned int PrecioFab, const string TipoDeProducto, bool Stock) {
+Articulo:: Articulo(float Precio, bool Cambio, string EstadoArticulo, const string TipoDeProducto, bool Stock) {
 
 }
 
@@ -57,12 +57,6 @@ void Articulo::get_stock() {
 }
 
 
-void Articulo::set_precioFab(unsigned pFab) {
-    this->precioFab = pFab;
-}
-unsigned int Articulo::get_precioFab() {
-    return this->precioFab;
-}
 
 Articulo::~Articulo() {
 

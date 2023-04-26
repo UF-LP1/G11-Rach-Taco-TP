@@ -14,7 +14,7 @@
  * @param string
  * @param bool
  */
-void ArtFerreteria::ArtFerreteria(void string, void bool) {
+ArtFerreteria::ArtFerreteria(string TipoDeProducto, bool Stock, enum productoDeFerreteria, float Precio, bool Cambio, const string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
 
 }
 
