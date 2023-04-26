@@ -8,7 +8,7 @@
 
 class Ferreteria {
 public: 
-    void Attribute1;
+   
     
 /**
  * @param string
@@ -26,12 +26,15 @@ void get_direccion();
 bool get_abierto();
     
 int generarPresupuesto();
+void set_precioAlquiler(unsigned int); 
+unsigned int get_precioAlquiler(); 
 protected: 
     
 void Ferreteria();
 private: 
     string direccion;
     bool abierto;
+    unsigned int precioAlquiler;
 };
 
 #endif //_FERRETERIA_H

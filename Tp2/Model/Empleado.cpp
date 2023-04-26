@@ -35,3 +35,9 @@ string Empleado::get_dni() {
 void Empleado::set_precioservicio(void unsigned int) {
     return;
 }
+int Empleado::get_salario() {
+    return;
+}
+void Empleado::set_salario(unsigned int) {
+    return;
+}
