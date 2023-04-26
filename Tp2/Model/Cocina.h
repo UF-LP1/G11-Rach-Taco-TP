@@ -16,7 +16,7 @@ public:
  * @param string
  * @param bool
  */
-void Cocina(void string, void bool);
+void Cocina( string,  bool);
     
 string get_tipoDeRespuesta();
     

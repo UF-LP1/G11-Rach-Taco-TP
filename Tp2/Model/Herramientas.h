@@ -18,7 +18,7 @@ public:
  * @param string
  * @param string
  */
-void Herramientas( float, float, string, string);
+Herramientas(float PrecioAlquiler, float PrecioSeguro, const string Modelo, string Condicion, unsigned int PrecioReal);
     
 string get_condicion();
     
@@ -41,7 +41,7 @@ unsigned int get_precioReal();
 void set_precioReal(unsigned int);
 protected: 
     
-void Herramientas();
+~Herramientas();
 private: 
     float precioAlquiler;
     float precioSeguro;

@@ -16,7 +16,7 @@ public:
  * @param string
  * @param bool
  */
-void Banyo(void string, void bool);
+void Banyo( string,  bool);
     
 string get_tipoDeProducto();
     

@@ -16,7 +16,7 @@ public:
  * @param string
  * @param bool
  */
-void Bazar(void string, void bool);
+void Bazar( string,  bool);
     
 string get_tipoDeProducto();
     

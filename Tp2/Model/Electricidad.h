@@ -16,7 +16,7 @@ public:
  * @param string
  * @param bool
  */
-void Electricidad(void string, void bool);
+void Electricidad( string,  bool);
     
 string get_tipoDeProducto();
     

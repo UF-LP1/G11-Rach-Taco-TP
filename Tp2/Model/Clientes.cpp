@@ -16,17 +16,11 @@
  * @param string
  * @param string
  */
-void Clientes::Clientes( string,  string,  string) {
+Clientes:: Clientes( string Hora_llegada,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her) {
 
 }
 
-/**
- * @param precio
- * @return Articulo
- */
-Articulo Clientes::comprar( precio) {
-    return null;
-}
+
 
 /**
  * @param Articulo
@@ -105,6 +99,6 @@ void Clientes::set_direccion( string) {
     return;
 }
 
-void Clientes::Clientes() {
+ Clientes::~Clientes() {
 
 }

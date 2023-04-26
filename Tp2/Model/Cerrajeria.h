@@ -16,7 +16,7 @@ public:
  * @param string
  * @param bool
  */
-void Cerrajeria(void string, void bool);
+void Cerrajeria( string,  bool);
     
 string get_tipoDeLlave();
     
@@ -29,7 +29,8 @@ void Cerrajeria();
 private: 
     const string tipoDeLlave;
     bool stock;
-    void ProductoCerrajeria;enum;
+    void ProductoCerrajeria;
+   
 };
 
 #endif //_CERRAJERIA_H

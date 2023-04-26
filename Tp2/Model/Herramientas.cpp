@@ -16,7 +16,7 @@
  * @param string
  * @param string
  */
-void Herramientas::Herramientas(float,  float,  string, string) {
+Herramientas:: Herramientas(float PrecioAlquiler, float PrecioSeguro, const string Modelo, string Condicion, unsigned int PrecioReal) {
 
 }
 
@@ -64,7 +64,7 @@ void Herramientas::set_precioSeguro( float) {
     return;
 }
 
-void Herramientas::Herramientas() {
+Herramientas::~Herramientas() {
 
 }
 unsigned int Herramientas::get_precioReal() {

@@ -22,12 +22,7 @@ public:
  * @param string
  * @param string
  */
-void Clientes( string,  string,  string);
-    
-/**
- * @param precio
- */
-Articulo comprar( precio);
+Clientes( string Hora_llegada ,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her);
     
 /**
  * @param Articulo
@@ -57,15 +52,14 @@ float generarPresupuesto(list<Articulo> art, list<Herramientas> her);
 void set_direccion( string);
 protected: 
     
-void Clientes();
+~Clientes();
 private: 
     const string horaDeLlegada;
     const string diaDeLlegada;
     string direccion;
     list<Articulo>carritoart; 
     list<Herramientas>carritoh;
-    int fin_cart;
-    int fin_cher;
+   
 
 };
 

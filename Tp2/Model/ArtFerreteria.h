@@ -16,7 +16,7 @@ public:
  * @param string
  * @param bool
  */
-void ArtFerreteria(void string, void bool);
+void ArtFerreteria( string,  bool);
     
 string get_tipoDeProducto();
     

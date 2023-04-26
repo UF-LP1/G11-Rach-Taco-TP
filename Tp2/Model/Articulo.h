@@ -21,7 +21,7 @@ public:
  * @param bool
  * @param string
  */
-void Articulo( string,  bool,  string);
+Articulo( float Precio, bool Cambio,string EstadoArticulo, unsigned int PrecioFab, const string TipoDeProducto, bool Stock);
     
 float get_precio();
     
@@ -42,7 +42,7 @@ unsigned int get_precioFab();
 
 protected: 
     
-void Articulo();
+~Articulo();
 private: 
     float precio;
     bool cambio;
