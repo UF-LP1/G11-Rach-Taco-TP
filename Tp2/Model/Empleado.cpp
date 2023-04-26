@@ -32,12 +32,13 @@ string Empleado::get_dni() {
  * @param unsigned int
  * @return void
  */
-void Empleado::set_precioservicio(void unsigned int) {
+void Empleado::set_precioservicio (unsigned int) {
     return;
 }
-int Empleado::get_salario() {
-    return;
+unsigned int Empleado::get_salario() {
+    return this->salario;
 }
-void Empleado::set_salario(unsigned int) {
-    return;
+void Empleado::set_salario(unsigned int sal) {
+    this->salario = sal;
+    
 }

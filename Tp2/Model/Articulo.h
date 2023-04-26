@@ -7,6 +7,10 @@
 #define _ARTICULO_H
 
 #include "ArtFerreteria.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
 
 
 class Articulo: public ArtFerreteria {
@@ -17,7 +21,7 @@ public:
  * @param bool
  * @param string
  */
-void Articulo(void string, void bool, void string);
+void Articulo( string,  bool,  string);
     
 float get_precio();
     
@@ -28,11 +32,14 @@ string get_estadoArticulo();
 /**
  * @param float
  */
-void set_precio(void float);
+void set_precio( float);
     
 void get_tipoDeProducto();
     
 void get_stock();
+void set_precioFab(unsigned int);
+unsigned int get_precioFab();
+
 protected: 
     
 void Articulo();
@@ -40,7 +47,10 @@ private:
     float precio;
     bool cambio;
     string estadoArticulo;
-    void tipoDeProducto cosnt string;
+    unsigned int precioFab;
+    
+       const string tipoDeProducto;
+       
     bool stock;
 };
 

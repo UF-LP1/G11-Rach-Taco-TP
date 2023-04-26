@@ -5,6 +5,9 @@
 
 #ifndef _HERRAMIENTAS_H
 #define _HERRAMIENTAS_H
+#include <iostream>
+#include <string>
+using namespace std;
 
 class Herramientas {
 public: 
@@ -15,7 +18,7 @@ public:
  * @param string
  * @param string
  */
-void Herramientas(void float, void float, void string, void string);
+void Herramientas( float, float, string, string);
     
 string get_condicion();
     
@@ -28,12 +31,14 @@ string get_modelo();
 /**
  * @param float
  */
-void set_precioAlquiler(void float);
+void set_precioAlquiler( float);
     
 /**
  * @param float
  */
-void set_precioSeguro(void float);
+void set_precioSeguro(float);
+unsigned int get_precioReal();
+void set_precioReal(unsigned int);
 protected: 
     
 void Herramientas();
@@ -42,6 +47,7 @@ private:
     float precioSeguro;
     const string modelo;
     string condicion;
+    unsigned int precioReal;
 };
 
 #endif //_HERRAMIENTAS_H

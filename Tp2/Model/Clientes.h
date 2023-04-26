@@ -5,6 +5,9 @@
 
 #ifndef _CLIENTES_H
 #define _CLIENTES_H
+#include <iostream>
+#include <string>
+using namespace std;
 
 class Clientes {
 public: 

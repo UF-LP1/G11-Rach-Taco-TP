@@ -5,6 +5,9 @@
 
 #ifndef _EMPLEADO_H
 #define _EMPLEADO_H
+#include <iostream>
+#include <string>
+using namespace std;
 
 class Empleado {
 public:
@@ -14,7 +17,7 @@ public:
     string get_apellido();
 
     string get_dni();
-    int get_salario();
+    unsigned int get_salario();
     void set_salario(unsigned int);
 
     /**

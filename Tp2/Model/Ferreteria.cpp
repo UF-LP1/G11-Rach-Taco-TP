@@ -14,7 +14,7 @@
  * @param string
  * @param bool
  */
-void Ferreteria::Ferreteria(void string, void bool) {
+void Ferreteria::Ferreteria( string,  bool) {
 
 }
 
@@ -22,7 +22,7 @@ void Ferreteria::Ferreteria(void string, void bool) {
  * @param string
  * @return void
  */
-void Ferreteria::set_direccion(void string) {
+void Ferreteria::set_direccion( string) {
     return;
 }
 
@@ -48,5 +48,13 @@ int Ferreteria::generarPresupuesto() {
 }
 
 void Ferreteria::Ferreteria() {
+
+}
+
+unsigned int Ferreteria::get_precioAlquiler() {
+    return this->precioAlquiler;
+}
+void Ferreteria::set_precioAlquiler(unsigned int pAlquiler) {
+    this->precioAlquiler = pAlquiler;
 
 }

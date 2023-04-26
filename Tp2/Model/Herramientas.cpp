@@ -16,7 +16,7 @@
  * @param string
  * @param string
  */
-void Herramientas::Herramientas(void float, void float, void string, void string) {
+void Herramientas::Herramientas( float,  float,  string, string) {
 
 }
 
@@ -66,4 +66,10 @@ void Herramientas::set_precioSeguro(void float) {
 
 void Herramientas::Herramientas() {
 
+}
+unsigned int Herramientas::get_precioReal() {
+    return this->precioReal;
+}
+void Herramientas::set_precioReal(unsigned int pReal) {
+    this->precioReal = pReal;
 }

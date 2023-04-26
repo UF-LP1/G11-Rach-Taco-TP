@@ -59,3 +59,9 @@ void Articulo::get_stock() {
 void Articulo::Articulo() {
 
 }
+void Articulo::set_precioFab(unsigned pFab) {
+    this->precioFab = pFab;
+}
+unsigned int Articulo::get_precioFab() {
+    return this->precioFab;
+}

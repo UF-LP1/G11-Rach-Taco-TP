@@ -5,6 +5,9 @@
 
 #ifndef _DUENYO_H
 #define _DUENYO_H
+#include <iostream>
+#include <string>
+using namespace std;
 
 class Duenyo {
 public: 
