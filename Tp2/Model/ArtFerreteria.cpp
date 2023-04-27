@@ -15,7 +15,10 @@
  * @param bool
  */
 ArtFerreteria::ArtFerreteria(string TipoDeProducto, bool Stock, enum productoDeFerreteria, float Precio, bool Cambio, const string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
-
+    this->stock = Stock;
+    this->precio = Precio;
+    this->tipoDeProducto=TipoDeProducto;
+    this-> //enum 
 }
 
 /**

@@ -27,7 +27,7 @@ protected:
     
 ~ ArtFerreteria();
 private: 
-    const string tipoDeProducto;
+    string tipoDeProducto;
     bool stock;
     enum ProductoFerreteria;
 };

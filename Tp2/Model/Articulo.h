@@ -28,7 +28,16 @@ float get_precio();
 bool get_cambio();
     
 string get_estadoArticulo();
-    
+ 
+friend class ArtFerreteria;
+friend class Banyo;
+friend class Bazar;
+friend class Cerrajeria;
+friend class Cocina;
+friend class Electricidad;
+
+
+
 /**
  * @param float
  */
@@ -36,7 +45,7 @@ void set_precio( float);
     
 void get_tipoDeProducto();
     
-void get_stock();
+bool get_stock();
 
 
 protected: 
@@ -46,7 +55,7 @@ private:
     float precio;
     bool cambio;
     string estadoArticulo;
-    const string tipoDeProducto;
+    string tipoDeProducto;
     bool stock;
 };
 

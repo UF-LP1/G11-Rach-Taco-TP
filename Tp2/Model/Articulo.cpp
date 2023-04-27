@@ -49,10 +49,12 @@ void Articulo::set_precio( float price) {
 }
 
 void Articulo::get_tipoDeProducto() {
+  
 
 }
 
-void Articulo::get_stock() {
+bool Articulo::get_stock() {
+    return this->stock;
 
 }
 

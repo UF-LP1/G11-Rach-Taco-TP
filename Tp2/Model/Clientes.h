@@ -12,6 +12,8 @@ using namespace std;
 #include "Articulo.h"
 #include "Herramientas.h"
 #include <list>
+#include<iterator>
+
 
 
 class Clientes {

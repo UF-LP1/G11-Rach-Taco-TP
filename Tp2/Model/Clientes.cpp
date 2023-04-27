@@ -6,6 +6,7 @@
 #include "Clientes.h"
 
 
+
 /**
  * Clientes implementation
  */
@@ -79,8 +80,10 @@ float Clientes::generarPresupuesto(list<Articulo>art , list<Herramientas> her)
    int i=0;
    list<Articulo>::iterator itArt = art.begin();
    list<Herramientas>::iterator itHer = her.begin();
-
+   
    for (i = 0; i < art.size();i++) {
+  
+       if(itArt->get_stock() == true)
        presupuesto = presupuesto + itArt->get_precio();
 
    };
