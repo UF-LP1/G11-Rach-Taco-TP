@@ -14,14 +14,18 @@
  * @param string
  * @param bool
  */
-void Cocina::Cocina(void string, void bool) {
+ Cocina(string TipoDeProducto, bool Stock, string productoDeCocina, float Precio, bool Cambio, string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
+     this->stock = Stock; 
+     this->tipoDeProducto = TipoDeProducto;
+     this->ProductoCocina = productoDeCocina;
+     this->precio = Precio;
 
 }
 
 /**
  * @return string
  */
-string Cocina::get_tipoDeRespuesta() {
+string Cocina::get_tipoDeProducto() {
     return "";
 }
 
@@ -35,10 +39,10 @@ bool Cocina::get_stock() {
 /**
  * @return enum
  */
-enum Cocina::get_ProductoCocina() {
-    return null;
+string Cocina::get_ProductoCocina() {
+    return ;
 }
 
-void Cocina::Cocina() {
+ Cocina::~Cocina() {
 
 }

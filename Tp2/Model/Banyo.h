@@ -16,20 +16,20 @@ public:
  * @param string
  * @param bool
  */
-void Banyo( string,  bool);
+ Banyo(string TipoDeProducto, bool Stock, string productoDeBanyo, float Precio, bool Cambio, string EstadoArticulo);
     
 string get_tipoDeProducto();
     
 bool get_stock();
     
-enum get_ProductoBanyo();
+string get_ProductoBanyo();
 protected: 
     
-void Banyo();
+~Banyo();
 private: 
-    const string tipoDeProducto;
+    string tipoDeProducto;
     bool stock;
-    enum ProductoBanyo;
+    string ProductoBanyo;
 };
 
 #endif //_BANYO_H

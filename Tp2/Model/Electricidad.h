@@ -16,20 +16,20 @@ public:
  * @param string
  * @param bool
  */
-void Electricidad( string,  bool);
+    Electricidad(string TipoDeProducto, bool Stock, string productoDeElectricidad, float Precio, bool Cambio, string EstadoArticulo);
     
 string get_tipoDeProducto();
     
 bool get_stock();
     
-enum get_ProductoElectricidad();
+string get_ProductoElectricidad();
 protected: 
     
-void Electricidad();
+ ~Electricidad();
 private: 
-    const string tipoDeProducto;
+     string tipoDeProducto;
     bool stock;
-    enum ProductoElectricidad;
+    string ProductoElectricidad;
 };
 
 #endif //_ELECTRICIDAD_H

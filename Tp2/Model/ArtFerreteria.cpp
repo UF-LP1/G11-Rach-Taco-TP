@@ -14,11 +14,12 @@
  * @param string
  * @param bool
  */
-ArtFerreteria::ArtFerreteria(string TipoDeProducto, bool Stock, enum productoDeFerreteria, float Precio, bool Cambio, const string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
+ArtFerreteria::ArtFerreteria(string TipoDeProducto, bool Stock, string productoDeFerreteria, float Precio, bool Cambio, string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
     this->stock = Stock;
     this->precio = Precio;
     this->tipoDeProducto=TipoDeProducto;
-    this-> //enum 
+    this->ProductoFerreteria = productoDeFerreteria;
+
 }
 
 /**
@@ -38,10 +39,10 @@ bool ArtFerreteria::get_stock() {
 /**
  * @return enum
  */
-enum ArtFerreteria::get_ProductoFerreteria() {
+string ArtFerreteria::get_ProductoFerreteria() {
     return null;
 }
 
-void ArtFerreteria::ArtFerreteria() {
+ ArtFerreteria::~ArtFerreteria() {
 
 }

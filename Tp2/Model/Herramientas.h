@@ -37,8 +37,7 @@ void set_precioAlquiler( float);
  * @param float
  */
 void set_precioSeguro(float);
-unsigned int get_precioReal();
-void set_precioReal(unsigned int);
+
 protected: 
     
 ~Herramientas();
@@ -47,7 +46,7 @@ private:
     float precioSeguro;
     const string modelo;
     string condicion;
-    unsigned int precioReal;
+    
 };
 
 #endif //_HERRAMIENTAS_H

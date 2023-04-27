@@ -14,7 +14,12 @@
  * @param string
  * @param bool
  */
-void Electricidad::Electricidad(void string, void bool) {
+ Electricidad(string TipoDeProducto, bool Stock, string ProductoDeElectricidad, float Precio, bool Cambio, string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
+     
+     this->stock = Stock;
+     this->tipoDeProducto = TipoDeProducto;
+     this->ProductoElectricidad = ProductoDeElectricidad;
+     this->precio = Precio;
 
 }
 
@@ -35,10 +40,10 @@ bool Electricidad::get_stock() {
 /**
  * @return enum
  */
-enum Electricidad::get_ProductoElectricidad() {
+string Electricidad::get_ProductoElectricidad() {
     return null;
 }
 
-void Electricidad::Electricidad() {
+ Electricidad::~Electricidad() {
 
 }

@@ -16,20 +16,20 @@ public:
  * @param string
  * @param bool
  */
-void Cocina( string,  bool);
+Cocina(string TipoDeProducto, bool Stock, string productoDeCocina, float Precio, bool Cambio, string EstadoArticulo);
     
-string get_tipoDeRespuesta();
+
     
 bool get_stock();
     
-enum get_ProductoCocina();
+string get_ProductoCocina();
 protected: 
     
-void Cocina();
+ ~Cocina();
 private: 
-    const string tipoDeRepuesto;
+    string tipoDeProducto;
     bool stock;
-    enum ProductoCocina;
+    string ProductoCocina;
 };
 
 #endif //_COCINA_H

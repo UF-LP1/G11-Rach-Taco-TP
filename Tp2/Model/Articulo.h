@@ -21,7 +21,7 @@ public:
  * @param bool
  * @param string
  */
-Articulo( float Precio, bool Cambio,string EstadoArticulo,  const string TipoDeProducto, bool Stock);
+Articulo( float Precio, bool Cambio,string EstadoArticulo,   string TipoDeProducto, bool Stock);
     
 float get_precio();
     
@@ -29,12 +29,7 @@ bool get_cambio();
     
 string get_estadoArticulo();
  
-friend class ArtFerreteria;
-friend class Banyo;
-friend class Bazar;
-friend class Cerrajeria;
-friend class Cocina;
-friend class Electricidad;
+
 
 
 
@@ -57,6 +52,12 @@ private:
     string estadoArticulo;
     string tipoDeProducto;
     bool stock;
+    friend class ArtFerreteria;
+    friend class Banyo;
+    friend class Bazar;
+    friend class Cerrajeria;
+    friend class Cocina;
+    friend class Electricidad;
 };
 
 #endif //_ARTICULO_H

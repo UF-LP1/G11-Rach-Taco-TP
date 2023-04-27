@@ -16,20 +16,20 @@ public:
  * @param string
  * @param bool
  */
-void Bazar( string,  bool);
+    Bazar(string TipoDeProducto, bool Stock, string productoDeBazar, float Precio, bool Cambio, string EstadoArticulo);
     
 string get_tipoDeProducto();
     
 bool get_stock();
     
-enum get_ProductoBazar();
+string get_ProductoBazar();
 protected: 
     
-void Bazar();
+~ Bazar();
 private: 
-    const string tipoDeProducto;
+     string tipoDeProducto;
     bool stock;
-    enum ProductoBazar;
+    string ProductoBazar;
 };
 
 #endif //_BAZAR_H

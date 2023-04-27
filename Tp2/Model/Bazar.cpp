@@ -14,8 +14,11 @@
  * @param string
  * @param bool
  */
-void Bazar::Bazar(void string, void bool) {
-
+ Bazar::Bazar( string TipoDeProducto,  bool Stock,string ProductoDeBazar, float Precio, bool Cambio, string EstadoArticulo  ):Articulo( Precio,  Cambio,  EstadoArticulo,   TipoDeProducto,  Stock) {
+     this->stock = Stock;
+     this->tipoDeProducto = TipoDeProducto;
+     this->ProductoBazar = ProductoDeBazar;
+     this->precio = Precio;
 }
 
 /**
@@ -35,10 +38,10 @@ bool Bazar::get_stock() {
 /**
  * @return enum
  */
-enum Bazar::get_ProductoBazar() {
-    return null;
+ string Bazar::get_ProductoBazar() {
+    return ;
 }
 
-void Bazar::Bazar() {
+ Bazar::~Bazar() {
 
 }

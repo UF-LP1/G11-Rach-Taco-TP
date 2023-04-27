@@ -1,3 +1,4 @@
+
 /**
  * Project Untitled
  */
@@ -14,7 +15,11 @@
  * @param string
  * @param bool
  */
-void Cerrajeria::Cerrajeria(void string, void bool) {
+ Cerrajeria(string TipoDellave, bool Stock, string productoDeCerrajeria, float Precio, bool Cambio, string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
+     this->stock = Stock;
+     this->tipoDeProducto = TipoDeProducto;
+     this->ProductoCerrajeria = productoDeCerrajeria;
+     this->precio = Precio;
 
 }
 
@@ -35,10 +40,10 @@ bool Cerrajeria::get_stock() {
 /**
  * @return enum
  */
-enum Cerrajeria::get_ProductoCerrajeria() {
+string Cerrajeria::get_ProductoCerrajeria() {
     return null;
 }
 
-void Cerrajeria::Cerrajeria() {
+ Cerrajeria::~Cerrajeria() {
 
 }

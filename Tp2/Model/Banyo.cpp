@@ -14,7 +14,11 @@
  * @param string
  * @param bool
  */
-void Banyo::Banyo(void string, void bool) {
+ Banyo::Banyo(string TipoDeProducto, bool Stock, string productoDeBanyo, float Precio, bool Cambio, string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
+     this->stock = Stock;
+     this->tipoDeProducto = TipoDeProducto;
+     this->ProductoBanyo = productoDeBanyo;
+     this->precio = Precio;
 
 }
 
@@ -35,10 +39,10 @@ bool Banyo::get_stock() {
 /**
  * @return enum
  */
-enum Banyo::get_ProductoBanyo() {
-    return null;
+string get_ProductoBanyo() {
+    return;
 }
 
-void Banyo::Banyo() {
+Banyo::~Banyo() {
 
 }

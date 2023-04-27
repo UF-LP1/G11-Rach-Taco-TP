@@ -11,25 +11,25 @@
 
 class ArtFerreteria: public Articulo {
 public: 
-    ArtFerreteria(string TipoDeProducto, bool Stock, enum productoDeFerreteria,float Precio,bool Cambio,const string EstadoArticulo)
+    ArtFerreteria(string TipoDeProducto, bool Stock, string productoDeFerreteria, float Precio, bool Cambio, string EstadoArticulo);
 /**
  * @param string
  * @param bool
  */
-void ArtFerreteria( string,  bool);
+
     
 string get_tipoDeProducto();
     
 bool get_stock();
     
-enum get_ProductoFerreteria();
+string get_ProductoFerreteria();
 protected: 
     
 ~ ArtFerreteria();
 private: 
     string tipoDeProducto;
     bool stock;
-    enum ProductoFerreteria;
+    string ProductoFerreteria;
 };
 
 #endif //_ARTFERRETERIA_H

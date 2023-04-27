@@ -16,20 +16,20 @@ public:
  * @param string
  * @param bool
  */
-void Cerrajeria( string,  bool);
+    Cerrajeria(string TipoDellave, bool Stock, string productoDeCerrajeria, float Precio, bool Cambio, string EstadoArticulo);
     
 string get_tipoDeLlave();
     
 bool get_stock();
     
-enum get_ProductoCerrajeria();
+string get_ProductoCerrajeria();
 protected: 
     
-void Cerrajeria();
+~ Cerrajeria();
 private: 
-    const string tipoDeLlave;
+    string tipoDeLlave;
     bool stock;
-    void ProductoCerrajeria;
+    string ProductoCerrajeria;
    
 };
 
