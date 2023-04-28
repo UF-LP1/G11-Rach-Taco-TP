@@ -25,21 +25,21 @@
  * @return string
  */
 string Bazar::get_tipoDeProducto() {
-    return "";
+    return this->tipoDeProducto;
 }
 
 /**
  * @return bool
  */
 bool Bazar::get_stock() {
-    return false;
+    return this->stock;
 }
 
 /**
  * @return enum
  */
  string Bazar::get_ProductoBazar() {
-    return ;
+    return this->ProductoBazar;
 }
 
  Bazar::~Bazar() {

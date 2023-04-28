@@ -26,21 +26,21 @@
  * @return string
  */
 string Cocina::get_tipoDeProducto() {
-    return "";
+    return this->tipoDeProducto;
 }
 
 /**
  * @return bool
  */
 bool Cocina::get_stock() {
-    return false;
+    return this->stock;
 }
 
 /**
  * @return enum
  */
 string Cocina::get_ProductoCocina() {
-    return ;
+    return this->ProductoCocina;
 }
 
  Cocina::~Cocina() {

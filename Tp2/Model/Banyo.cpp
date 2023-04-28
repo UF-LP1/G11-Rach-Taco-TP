@@ -26,21 +26,21 @@
  * @return string
  */
 string Banyo::get_tipoDeProducto() {
-    return "";
+    return this->tipoDeProducto;
 }
 
 /**
  * @return bool
  */
 bool Banyo::get_stock() {
-    return false;
+    return this->stock;
 }
 
 /**
  * @return enum
  */
 string get_ProductoBanyo() {
-    return;
+    return ;
 }
 
 Banyo::~Banyo() {

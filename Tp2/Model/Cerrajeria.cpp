@@ -27,21 +27,21 @@
  * @return string
  */
 string Cerrajeria::get_tipoDeLlave() {
-    return "";
+    return this->tipoDeLlave;
 }
 
 /**
  * @return bool
  */
 bool Cerrajeria::get_stock() {
-    return false;
+    return this->stock;
 }
 
 /**
  * @return enum
  */
 string Cerrajeria::get_ProductoCerrajeria() {
-    return null;
+    return this->ProductoCerrajeria;
 }
 
  Cerrajeria::~Cerrajeria() {

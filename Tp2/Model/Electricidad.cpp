@@ -27,21 +27,21 @@
  * @return string
  */
 string Electricidad::get_tipoDeProducto() {
-    return "";
+    return this->tipoDeProducto;
 }
 
 /**
  * @return bool
  */
 bool Electricidad::get_stock() {
-    return false;
+    return this->stock;
 }
 
 /**
  * @return enum
  */
 string Electricidad::get_ProductoElectricidad() {
-    return null;
+    return this->ProductoElectricidad;
 }
 
  Electricidad::~Electricidad() {

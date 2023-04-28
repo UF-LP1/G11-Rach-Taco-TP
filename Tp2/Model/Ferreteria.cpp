@@ -38,7 +38,7 @@ void Ferreteria::get_direccion() {
  * @return bool
  */
 bool Ferreteria::get_abierto() {
-    return false;
+    return this->abierto;
 }
 
 /**

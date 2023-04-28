@@ -24,44 +24,44 @@ Herramientas::Herramientas(float PrecioAlquiler, float PrecioSeguro, const strin
  * @return string
  */
 string Herramientas::get_condicion() {
-    return "";
+    return this->condicion;
 }
 
 /**
  * @return float
  */
 float Herramientas::get_precioAlquiler() {
-    return 0.0;
+    return this->precioAlquiler;
 }
 
 /**
  * @return float
  */
 float Herramientas::get_precioSeguro() {
-    return 0.0;
+    return this->precioSeguro;
 }
 
 /**
  * @return string
  */
 string Herramientas::get_modelo() {
-    return "";
+    return this->modelo;
 }
 
 /**
  * @param float
  * @return void
  */
-void Herramientas::set_precioAlquiler( float) {
-    return;
+void Herramientas::set_precioAlquiler( float precioalq) {
+    return; this->precioAlquiler = precioalq;
 }
 
 /**
  * @param float
  * @return void
  */
-void Herramientas::set_precioSeguro( float) {
-    return;
+void Herramientas::set_precioSeguro( float precioseg) {
+    return this->precioSeguro=precioseg;
 }
 
 Herramientas::~Herramientas() {

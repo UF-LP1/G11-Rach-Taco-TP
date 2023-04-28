@@ -30,14 +30,14 @@ float Articulo::get_precio() {
  * @return bool
  */
 bool Articulo::get_cambio() {
-    return false;
+    return this->cambio;
 }
 
 /**
  * @return string
  */
 string Articulo::get_estadoArticulo() {
-    return "";
+    return this->estadoArticulo;
 }
 
 /**
@@ -48,8 +48,8 @@ void Articulo::set_precio( float price) {
     this->precio=price;
 }
 
-void Articulo::get_tipoDeProducto() {
-  
+string Articulo::get_tipoDeProducto() {
+  return this->tipoDeProducto
 
 }
 

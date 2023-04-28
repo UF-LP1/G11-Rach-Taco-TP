@@ -28,21 +28,21 @@ Clientes:: Clientes( string Hora_llegada,  string Dia_llegada,  string Direccion
  * @return Articulo
  */
 Articulo Clientes::cambiar( Articulo) {
-    return null;
+    return ;
 }
 
 /**
  * @return string
  */
 string Clientes::get_horaDeLlegada() {
-    return "";
+    return this->horaDeLlegada;
 }
 
 /**
  * @return string
  */
 string Clientes::get_diaDeLlegada() {
-    return "";
+    return this->diaDeLlegada;
 }
 
 /**
@@ -57,7 +57,7 @@ void Clientes::alquilar( Herramientas) {
  * @return string
  */
 string Clientes::get_direccion() {
-    return "";
+    return this->direccion;
 }
 
 /**
@@ -99,8 +99,8 @@ float Clientes::generarPresupuesto(list<Articulo>art , list<Herramientas> her)
  * @param string
  * @return void
  */
-void Clientes::set_direccion( string) {
-    return;
+void Clientes::set_direccion( string Direc) {
+    this->direccion=Direc;
 }
 
  Clientes::~Clientes() {

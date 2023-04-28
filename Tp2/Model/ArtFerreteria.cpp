@@ -26,21 +26,21 @@ ArtFerreteria::ArtFerreteria(string TipoDeProducto, bool Stock, string productoD
  * @return string
  */
 string ArtFerreteria::get_tipoDeProducto() {
-    return "";
+    return this->tipoDeProducto;
 }
 
 /**
  * @return bool
  */
 bool ArtFerreteria::get_stock() {
-    return false;
+    return this->stock;
 }
 
 /**
  * @return enum
  */
 string ArtFerreteria::get_ProductoFerreteria() {
-    return null;
+    return this->ProductoFerreteria;
 }
 
  ArtFerreteria::~ArtFerreteria() {
