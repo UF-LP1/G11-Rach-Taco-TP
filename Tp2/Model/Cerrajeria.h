@@ -12,11 +12,8 @@
 class Cerrajeria: public Articulo {
 public: 
     
-/**
- * @param string
- * @param bool
- */
-    Cerrajeria(string TipoDellave, bool Stock, string productoDeCerrajeria, float Precio, bool Cambio, string EstadoArticulo);
+
+Cerrajeria(string TipoDellave, bool Stock, string productoDeCerrajeria, float Precio, bool Cambio, string EstadoArticulo);
     
 string get_tipoDeLlave();
     

@@ -85,10 +85,11 @@ float Clientes::generarPresupuesto(list<Articulo>art , list<Herramientas> her)
   
        if(itArt->get_stock() == true)
        presupuesto = presupuesto + itArt->get_precio();
-
+       *itArt++;
    };
    for (i = 0; i < her.size(); i++) {
        presupuesto = presupuesto + itHer->get_precioAlquiler()+ itHer->get_precioSeguro();
+       itHer++;
    }
 
     return presupuesto;
