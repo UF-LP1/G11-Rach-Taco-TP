@@ -38,7 +38,7 @@ string get_estadoArticulo();
  */
 void set_precio( float);
     
-void get_tipoDeProducto();
+string get_tipoDeProducto();
     
 bool get_stock();
 
