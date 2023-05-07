@@ -8,8 +8,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
+#include "Clientes.h"
 
-class Empleado {
+class Empleado { //falta constructor y destructor
 public:
 
     void get_nombrestring();
@@ -23,7 +24,8 @@ public:
     /**
      * @param unsigned int
      */
-    void set_precioservicio(void unsigned int);
+    void set_precioservicio( unsigned int);
+    ~Empleado();
 private:
     string nombre;
     string apellido;

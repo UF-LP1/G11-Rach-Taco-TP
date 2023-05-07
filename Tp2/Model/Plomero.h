@@ -9,7 +9,7 @@
 #include "Empleado.h"
 
 
-class Plomero: public Empleado {
+class Plomero: public Empleado { //corregir contructor
 public: 
     
 /**
@@ -18,7 +18,7 @@ public:
  * @param string
  * @param unsigned int
  */
-void Plomero(void string, void string, void string, void unsigned int);
+ Plomero( string,  string,  string,  unsigned int);
     
 string get_nombre();
     
@@ -29,16 +29,16 @@ string get_dni();
 /**
  * @param unsigned int
  */
-void set_precioservicio(void unsigned int);
+void set_precioservicio( unsigned int);
     
 void trabajoPlomeria();
     
 string get_limpiezaTuberias();
     
 string get_mantenimientoTuberia();
-protected: 
+ 
     
-void Plomero();
+    ~Plomero();
 private: 
     const string nombre;
     const string apellido;

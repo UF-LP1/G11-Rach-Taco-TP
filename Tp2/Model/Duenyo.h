@@ -8,45 +8,47 @@
 #include <iostream>
 #include <string>
 using namespace std;
+#include "Clientes.h"
 
-class Duenyo {
+class Duenyo { //falta constructor
 public: 
     
-void Duenyo();
+ Duenyo();
     
 /**
  * @param Clientes
  */
-void atender_cliente(void Clientes);
+void atender_cliente( Clientes);
     
 /**
  * @param Articulo
  */
-float cobrar(void Articulo);
+float cobrar( Articulo);
     
 /**
  * @param Herramientas
  */
-float devolverSeguro(void Herramientas);
+float devolverSeguro( Herramientas);
     
 /**
  * @param Clientes
  */
-void identificarArticulo(void Clientes);
+void identificarArticulo( Clientes);
     
 /**
  * @param Clientes
  */
-float devolverDif(void Clientes);
+float devolverDif( Clientes);
     
 string get_nombre();
     
 string get_apellido();
     
 string get_dni();
+~Duenyo();
 protected: 
     
-void Duenyo();
+
 private: 
     const string nombre;
     const string apellido;

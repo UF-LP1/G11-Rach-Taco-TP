@@ -12,12 +12,12 @@
 class Despachante: public Empleado {
 public: 
     
-void Despachante();
+ Despachante();
     
 /**
  * @param Clientes
  */
-void despachar(void Clientes);
+void despachar( Clientes);
     
 string get_nombre();
     
@@ -28,7 +28,7 @@ string get_dni();
 /**
  * @param unsigned int
  */
-void set_precioservicio(void unsigned int);
+void set_precioservicio( unsigned int);
     
 bool trabajoDespachar();
     
@@ -39,7 +39,7 @@ unsigned int get_cantPedidos();
 enum get_direcciones();
 protected: 
     
-void Despachante();
+    ~Despachante();
 private: 
     const string nombre;
     const string apellido;

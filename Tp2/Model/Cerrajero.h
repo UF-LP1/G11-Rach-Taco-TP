@@ -9,21 +9,22 @@
 #include "Empleado.h"
 
 
+
 class Cerrajero: public Empleado {
 public: 
     
 /**
  * @param string
  * @param string
- * @param string
  * @param unsigned int
+ * @param string
  */
-void Cerrajero(void string, void string, void string, void unsigned int);
+ Cerrajero( string,  string,  string,  unsigned int);
     
 /**
  * @param Clientes
  */
-void cerrajeria(void Clientes);
+void  cerrajeria( Clientes);
     
 string get_nombre();
     
@@ -34,14 +35,14 @@ string get_dni();
 /**
  * @param unsigned int
  */
-void set_precioservicio(void unsigned int);
+void set_precioservicio( unsigned int);
     
 void trabajoCerrajeria();
     
 string get_tipoDeLlave();
 protected: 
     
-void Cerrajero();
+    ~Cerrajero();
 private: 
     const string nombre;
     const string apellido;

@@ -37,10 +37,9 @@ void set_precioAlquiler( float);
  * @param float
  */
 void set_precioSeguro(float);
-
-protected: 
-    
 ~Herramientas();
+
+
 private: 
     float precioAlquiler;
     float precioSeguro;

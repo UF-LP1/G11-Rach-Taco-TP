@@ -13,7 +13,7 @@ using namespace std;
 
 
 
-class Articulo: public ArtFerreteria {
+class Articulo{
 public: 
     
 /**

@@ -17,20 +17,21 @@ public:
  * @param string
  * @param bool
  */
-void Ferreteria( string,  bool);
+ Ferreteria( string,  bool, unsigned int);
     
 /**
  * @param string
  */
 void set_direccion(string);
     
-void get_direccion();
+string get_direccion();
     
 bool get_abierto();
     
 
 void set_precioAlquiler(unsigned int); 
 unsigned int get_precioAlquiler(); 
+~Ferreteria();
 protected: 
     
 
