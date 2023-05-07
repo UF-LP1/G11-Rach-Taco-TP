@@ -15,7 +15,7 @@
  * @param string
  * @param bool
  */
- Cerrajeria(string TipoDellave, bool Stock, string productoDeCerrajeria, float Precio, bool Cambio, string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
+ Cerrajeria::Cerrajeria(string TipoDellave, bool Stock, string productoDeCerrajeria, float Precio, bool Cambio, string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
      this->stock = Stock;
      this->tipoDeProducto = TipoDeProducto;
      this->ProductoCerrajeria = productoDeCerrajeria;

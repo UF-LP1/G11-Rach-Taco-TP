@@ -21,7 +21,7 @@ Cocina(string TipoDeProducto, bool Stock, string productoDeCocina, float Precio,
 
     
 bool get_stock();
-    
+string get_tipoDeProducto();
 string get_ProductoCocina();
 protected: 
     

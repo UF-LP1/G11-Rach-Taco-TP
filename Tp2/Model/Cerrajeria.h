@@ -24,6 +24,7 @@ protected:
     
 ~Cerrajeria();
 private: 
+
     string tipoDeLlave;
     bool stock;
     string ProductoCerrajeria;

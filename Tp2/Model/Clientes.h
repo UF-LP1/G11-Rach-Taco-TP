@@ -52,7 +52,10 @@ float generarPresupuesto(list<Articulo> art, list<Herramientas> her);
  * @param string
  */
 void set_direccion( string);
-protected: 
+
+list<Articulo> agregarprod(Articulo, list<Articulo>);
+list <Herramientas> agregarher(Herramientas, list<Herramientas>);
+
     
 ~Clientes();
 private: 

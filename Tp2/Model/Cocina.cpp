@@ -14,7 +14,7 @@
  * @param string
  * @param bool
  */
- Cocina(string TipoDeProducto, bool Stock, string productoDeCocina, float Precio, bool Cambio, string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
+ Cocina::Cocina(string TipoDeProducto, bool Stock, string productoDeCocina, float Precio, bool Cambio, string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
      this->stock = Stock; 
      this->tipoDeProducto = TipoDeProducto;
      this->ProductoCocina = productoDeCocina;

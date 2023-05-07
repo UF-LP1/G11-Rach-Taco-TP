@@ -24,7 +24,7 @@ public:
     /**
      * @param unsigned int
      */
-    void set_precioservicio( unsigned int);
+    void set_precioservicio(unsigned int);
     ~Empleado();
 private:
     string nombre;
@@ -32,8 +32,8 @@ private:
     const string dni;
     unsigned int precioservicio;
     unsigned int salario;
-}
-
 };
+
+
 
 #endif //_EMPLEADO_H

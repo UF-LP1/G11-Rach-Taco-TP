@@ -43,7 +43,7 @@ string get_tipoDeProducto();
 bool get_stock();
 
 
-protected: 
+
     
 ~Articulo();
 private: 

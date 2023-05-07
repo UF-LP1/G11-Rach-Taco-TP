@@ -73,6 +73,12 @@ void Clientes::mostrarFoto() {
 void Clientes::mostrarArtRoto() {
     return;
 }
+list<Articulo> agregarprod(Articulo, list <Articulo>) {
+
+}
+list <Herramientas> agregarher(Herramientas, list<Herramientas>) {
+
+}
 
 float Clientes::generarPresupuesto(list<Articulo>art , list<Herramientas> her)
 {
