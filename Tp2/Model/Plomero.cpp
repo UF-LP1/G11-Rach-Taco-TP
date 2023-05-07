@@ -16,7 +16,8 @@
  * @param string
  * @param unsigned int
  */
- Plomero::Plomero( string,  string,  string,  unsigned int) {
+Plomero::Plomero(string nombre, string, string, unsigned int) :Empleado(nombre, apellido, dni, precioservicio, salario) {//no se xq salario tiene error
+    {
 
 }
 

@@ -1,2 +1,14 @@
-﻿  Cerrajeria.cpp
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Cerrajeria.cpp(18,177): error C2065: 'Tipodeproducto': undeclared identifier
+﻿  ArtFerreteria.cpp
+  Cerrajeria.cpp
+  Cerrajero.cpp
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Cerrajero.cpp(19,65): error C2512: 'Empleado': no appropriate default constructor available
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Empleado.h(14,7): message : see declaration of 'Empleado'
+  Clientes.cpp
+  Despachante.cpp
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Despachante.cpp(13,204): error C2065: 'Salario': undeclared identifier
+  Duenyo.cpp
+  Empleado.cpp
+  Plomero.cpp
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(19,61): error C2512: 'Empleado': no appropriate default constructor available
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Empleado.h(14,7): message : see declaration of 'Empleado'
+  Generating Code...

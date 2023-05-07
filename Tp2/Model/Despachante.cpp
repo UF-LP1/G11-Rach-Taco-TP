@@ -10,7 +10,7 @@
  */
 
 
- Despachante::Despachante() {
+ Despachante::Despachante(string Nombre, string Apellido, const string Dni, unsigned int PrecioServicio, string Vehiculo, unsigned int CantPedidios):Empleado( Nombre,  Apellido,   Dni,   PrecioServicio, salario) {//no se xq salario tiene error
 
 }
 
