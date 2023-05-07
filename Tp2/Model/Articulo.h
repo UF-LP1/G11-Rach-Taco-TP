@@ -6,7 +6,7 @@
 #ifndef _ARTICULO_H
 #define _ARTICULO_H
 
-#include "ArtFerreteria.h"
+
 #include <iostream>
 #include <string>
 using namespace std;

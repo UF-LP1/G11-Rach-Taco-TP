@@ -13,7 +13,7 @@ using namespace std;
 class Empleado { //falta constructor y destructor
 public:
 
-    void get_nombrestring();
+    string get_nombre();
 
     string get_apellido();
 

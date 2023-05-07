@@ -10,7 +10,7 @@
  */
 
 
-void Despachante::Despachante() {
+ Despachante::Despachante() {
 
 }
 
@@ -47,7 +47,7 @@ string Despachante::get_dni() {
  * @param unsigned int
  * @return void
  */
-void Despachante::set_precioservicio(void unsigned int) {
+void Despachante::set_precioservicio( unsigned int) {
     return;
 }
 
@@ -69,7 +69,7 @@ string Despachante::get_vehiculo() {
  * @return unsigned int
  */
 unsigned int Despachante::get_cantPedidos() {
-    return null;
+    return ;
 }
 
 /**
@@ -79,6 +79,6 @@ enum Despachante::get_direcciones() {
     return null;
 }
 
-void Despachante::Despachante() {
+ Despachante::~Despachante() {
 
 }

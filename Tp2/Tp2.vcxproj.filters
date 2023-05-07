@@ -60,6 +60,9 @@
     <ClCompile Include="Model\Plomero.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Model\ArtFerreteria.h">
@@ -105,6 +108,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Model\Plomero.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

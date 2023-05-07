@@ -16,7 +16,7 @@
  * @param string
  * @param unsigned int
  */
-void Plomero::Plomero(void string, void string, void string, void unsigned int) {
+ Plomero::Plomero( string,  string,  string,  unsigned int) {
 
 }
 
@@ -45,8 +45,8 @@ string Plomero::get_dni() {
  * @param unsigned int
  * @return void
  */
-void Plomero::set_precioservicio(void unsigned int) {
-    return;
+void Plomero::set_precioservicio( unsigned int pre) {
+    this->precioservicio = pre;
 }
 
 /**
@@ -60,16 +60,16 @@ void Plomero::trabajoPlomeria() {
  * @return string
  */
 string Plomero::get_limpiezaTuberias() {
-    return "";
+    return this->limpiezaTuberias;
 }
 
 /**
  * @return string
  */
 string Plomero::get_mantenimientoTuberia() {
-    return "";
+    return this ->mantenimientoTuberias;
 }
 
-void Plomero::Plomero() {
+ Plomero::~Plomero() {
 
 }

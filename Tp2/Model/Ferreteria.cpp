@@ -15,7 +15,7 @@
  * @param string
  * @param bool
  */
-void Ferreteria::Ferreteria( string,  bool) {
+ Ferreteria::Ferreteria( string,  bool) {
 
 }
 
@@ -23,15 +23,15 @@ void Ferreteria::Ferreteria( string,  bool) {
  * @param string
  * @return void
  */
-void Ferreteria::set_direccion( string) {
-    return;
+void Ferreteria::set_direccion( string dire) {
+    this->direccion = dire;
 }
 
 /**
  * @return void
  */
-void Ferreteria::get_direccion() {
-    return;
+string Ferreteria::get_direccion() {
+    return this->direccion;
 }
 
 /**

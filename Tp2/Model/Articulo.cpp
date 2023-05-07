@@ -49,7 +49,7 @@ void Articulo::set_precio( float price) {
 }
 
 string Articulo::get_tipoDeProducto() {
-  return this->tipoDeProducto
+    return this->tipoDeProducto;
 
 }
 

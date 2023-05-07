@@ -10,7 +10,7 @@
  */
 
 
-void Duenyo::Duenyo() {
+ Duenyo::Duenyo() {
 
 }
 
@@ -18,7 +18,7 @@ void Duenyo::Duenyo() {
  * @param Clientes
  * @return void
  */
-void Duenyo::atender_cliente(void Clientes) {
+void Duenyo::atender_cliente( Clientes) {
     return;
 }
 
@@ -26,7 +26,7 @@ void Duenyo::atender_cliente(void Clientes) {
  * @param Articulo
  * @return float
  */
-float Duenyo::cobrar(void Articulo) {
+float Duenyo::cobrar( Articulo) {
     return 0.0;
 }
 
@@ -34,7 +34,7 @@ float Duenyo::cobrar(void Articulo) {
  * @param Herramientas
  * @return float
  */
-float Duenyo::devolverSeguro(void Herramientas) {
+float Duenyo::devolverSeguro( Herramientas) {
     return 0.0;
 }
 
@@ -42,7 +42,7 @@ float Duenyo::devolverSeguro(void Herramientas) {
  * @param Clientes
  * @return void
  */
-void Duenyo::identificarArticulo(void Clientes) {
+void Duenyo::identificarArticulo( Clientes) {
     return;
 }
 
@@ -50,7 +50,7 @@ void Duenyo::identificarArticulo(void Clientes) {
  * @param Clientes
  * @return float
  */
-float Duenyo::devolverDif(void Clientes) {
+float Duenyo::devolverDif( Clientes) {
     return 0.0;
 }
 
@@ -75,6 +75,6 @@ string Duenyo::get_dni() {
     return "";
 }
 
-void Duenyo::Duenyo() {
+ Duenyo::~Duenyo() {
 
 }

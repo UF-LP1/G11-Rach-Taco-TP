@@ -10,7 +10,8 @@
  */
 
 
-void Empleado::get_nombrestring() {
+string Empleado::get_nombre() {
+    return this->nombre;
 
 }
 
@@ -18,22 +19,22 @@ void Empleado::get_nombrestring() {
  * @return string
  */
 string Empleado::get_apellido() {
-    return "";
+    return this->apellido;
 }
 
 /**
  * @return string
  */
 string Empleado::get_dni() {
-    return "";
+    return this->dni;
 }
 
 /**
  * @param unsigned int
  * @return void
  */
-void Empleado::set_precioservicio (unsigned int) {
-    return;
+void Empleado::set_precioservicio (unsigned int pre) {
+    this->precioservicio = pre;
 }
 unsigned int Empleado::get_salario() {
     return this->salario;

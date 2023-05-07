@@ -61,7 +61,7 @@ void Herramientas::set_precioAlquiler( float precioalq) {
  * @return void
  */
 void Herramientas::set_precioSeguro( float precioseg) {
-    return this->precioSeguro=precioseg;
+     this->precioSeguro=precioseg;
 }
 
 Herramientas::~Herramientas() {

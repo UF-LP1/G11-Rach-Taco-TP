@@ -22,7 +22,7 @@ bool get_stock();
 string get_ProductoCerrajeria();
 protected: 
     
-~ Cerrajeria();
+~Cerrajeria();
 private: 
     string tipoDeLlave;
     bool stock;

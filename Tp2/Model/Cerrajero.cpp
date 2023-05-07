@@ -16,7 +16,7 @@
  * @param string
  * @param unsigned int
  */
-void Cerrajero::Cerrajero(void string, void string, void string, void unsigned int) {
+ Cerrajero::Cerrajero( string,  string,  string,  unsigned int) {
 
 }
 
@@ -24,7 +24,7 @@ void Cerrajero::Cerrajero(void string, void string, void string, void unsigned i
  * @param Clientes
  * @return void
  */
-void Cerrajero::cerrajeria(void Clientes) {
+void cerrajeria( Clientes) {
     return;
 }
 
@@ -32,35 +32,35 @@ void Cerrajero::cerrajeria(void Clientes) {
  * @return string
  */
 string Cerrajero::get_nombre() {
-    return "";
+    return this->nombre;
 }
 
 /**
  * @return string
  */
 string Cerrajero::get_apellido() {
-    return "";
+    return this->apellido;
 }
 
 /**
  * @return string
  */
 string Cerrajero::get_dni() {
-    return "";
+    return this->dni;
 }
 
 /**
  * @param unsigned int
  * @return void
  */
-void Cerrajero::set_precioservicio(void unsigned int) {
-    return;
+void Cerrajero::set_precioservicio( unsigned int precio) {
+    this->precioservicio=precio;
 }
 
 /**
  * @return void
  */
-void Cerrajero::trabajoCerrajeria() {
+void trabajoCerrajeria() {
     return;
 }
 
@@ -68,9 +68,9 @@ void Cerrajero::trabajoCerrajeria() {
  * @return string
  */
 string Cerrajero::get_tipoDeLlave() {
-    return "";
+    return this->tipoDeLLave;
 }
 
-void Cerrajero::Cerrajero() {
+ Cerrajero::~Cerrajero() {
 
 }
