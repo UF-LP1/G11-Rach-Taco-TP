@@ -43,3 +43,6 @@ void Empleado::set_salario(unsigned int sal) {
     this->salario = sal;
     
 }
+Empleado::~Empleado() {
+
+}

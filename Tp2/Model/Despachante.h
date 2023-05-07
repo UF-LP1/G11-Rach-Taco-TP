@@ -9,7 +9,7 @@
 #include "Empleado.h"
 
 
-class Despachante: public Empleado {
+class Despachante: public Empleado { //falta constructor
 public: 
     
  Despachante();
@@ -36,9 +36,8 @@ string get_vehiculo();
     
 unsigned int get_cantPedidos();
     
-enum get_direcciones();
-protected: 
-    
+
+
     ~Despachante();
 private: 
     const string nombre;
@@ -47,7 +46,7 @@ private:
     unsigned int precioservicio;
     string vehiculo;
     unsigned int cantPedidos;
-    enum direcciones;
+ 
 };
 
 #endif //_DESPACHANTE_H

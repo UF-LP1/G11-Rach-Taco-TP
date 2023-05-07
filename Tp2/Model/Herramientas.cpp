@@ -17,6 +17,9 @@
  * @param string
  */
 Herramientas::Herramientas(float PrecioAlquiler, float PrecioSeguro, const string Modelo, string Condicion) {
+    this->precioAlquiler = PrecioAlquiler;
+    this->precioSeguro = PrecioSeguro;
+    this->condicion = Condicion;
 
 }
 

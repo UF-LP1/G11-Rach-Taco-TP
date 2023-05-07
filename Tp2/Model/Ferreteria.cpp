@@ -15,7 +15,7 @@
  * @param string
  * @param bool
  */
- Ferreteria::Ferreteria( string,  bool) {
+ Ferreteria::Ferreteria( string,  bool, unsigned int l) {
 
 }
 
@@ -41,10 +41,9 @@ bool Ferreteria::get_abierto() {
     return this->abierto;
 }
 
-/**
- * @return int
- */
+Ferreteria::~Ferreteria() {
 
+}
 
 unsigned int Ferreteria::get_precioAlquiler() {
     return this->precioAlquiler;

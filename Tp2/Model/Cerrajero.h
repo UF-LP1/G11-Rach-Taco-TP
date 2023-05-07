@@ -40,7 +40,7 @@ void set_precioservicio( unsigned int);
 void trabajoCerrajeria();
     
 string get_tipoDeLlave();
-protected: 
+
     
     ~Cerrajero();
 private: 

@@ -18,7 +18,7 @@ public:
  * @param string
  * @param string
  */
-Herramientas(float PrecioAlquiler, float PrecioSeguro, const string Modelo, string Condicion, unsigned int PrecioReal);
+Herramientas(float PrecioAlquiler, float PrecioSeguro, const string Modelo, string Condicion);
     
 string get_condicion();
     

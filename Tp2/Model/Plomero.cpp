@@ -24,21 +24,21 @@
  * @return string
  */
 string Plomero::get_nombre() {
-    return "";
+    return this->nombre;
 }
 
 /**
  * @return string
  */
 string Plomero::get_apellido() {
-    return "";
+    return this->apellido;
 }
 
 /**
  * @return string
  */
 string Plomero::get_dni() {
-    return "";
+    return this->dni;
 }
 
 /**

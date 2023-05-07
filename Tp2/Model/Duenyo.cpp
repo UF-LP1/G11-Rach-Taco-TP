@@ -26,7 +26,7 @@ void Duenyo::atender_cliente( Clientes) {
  * @param Articulo
  * @return float
  */
-float Duenyo::cobrar( Articulo) {
+float Duenyo::cobrar( Clientes) {
     return 0.0;
 }
 
@@ -34,7 +34,7 @@ float Duenyo::cobrar( Articulo) {
  * @param Herramientas
  * @return float
  */
-float Duenyo::devolverSeguro( Herramientas) {
+float Duenyo::devolverSeguro( Herramientas, Clientes) {
     return 0.0;
 }
 
@@ -58,21 +58,21 @@ float Duenyo::devolverDif( Clientes) {
  * @return string
  */
 string Duenyo::get_nombre() {
-    return "";
+    return this->nombre;
 }
 
 /**
  * @return string
  */
 string Duenyo::get_apellido() {
-    return "";
+    return this->apellido;
 }
 
 /**
  * @return string
  */
 string Duenyo::get_dni() {
-    return "";
+    return this->dni;
 }
 
  Duenyo::~Duenyo() {

@@ -23,7 +23,7 @@ string get_tipoDeProducto();
 bool get_stock();
     
 string get_ProductoBazar();
-protected: 
+
     
 ~ Bazar();
 private: 

@@ -18,7 +18,7 @@
  * @param Clientes
  * @return void
  */
-void Despachante::despachar(void Clientes) {
+void Despachante::despachar( Clientes) {
     return;
 }
 
@@ -26,29 +26,29 @@ void Despachante::despachar(void Clientes) {
  * @return string
  */
 string Despachante::get_nombre() {
-    return "";
+    return this->nombre;
 }
 
 /**
  * @return string
  */
 string Despachante::get_apellido() {
-    return "";
+    return this->apellido;
 }
 
 /**
  * @return string
  */
 string Despachante::get_dni() {
-    return "";
+    return this->dni;
 }
 
 /**
  * @param unsigned int
  * @return void
  */
-void Despachante::set_precioservicio( unsigned int) {
-    return;
+void Despachante::set_precioservicio( unsigned int f) {
+    this->precioservicio = f;
 }
 
 /**
@@ -62,22 +62,20 @@ bool Despachante::trabajoDespachar() {
  * @return string
  */
 string Despachante::get_vehiculo() {
-    return "";
+    return this->vehiculo;
 }
 
 /**
  * @return unsigned int
  */
 unsigned int Despachante::get_cantPedidos() {
-    return ;
+    return this->cantPedidos;
 }
 
 /**
  * @return enum
  */
-enum Despachante::get_direcciones() {
-    return null;
-}
+
 
  Despachante::~Despachante() {
 

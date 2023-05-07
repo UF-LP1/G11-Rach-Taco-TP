@@ -39,8 +39,8 @@ bool Banyo::get_stock() {
 /**
  * @return enum
  */
-string get_ProductoBanyo() {
-    return ;
+string Banyo::get_ProductoBanyo() {
+    return this->ProductoBanyo;
 }
 
 Banyo::~Banyo() {

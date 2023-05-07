@@ -32,7 +32,7 @@ bool get_abierto();
 void set_precioAlquiler(unsigned int); 
 unsigned int get_precioAlquiler(); 
 ~Ferreteria();
-protected: 
+
     
 
 private: 

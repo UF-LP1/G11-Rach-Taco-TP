@@ -27,8 +27,8 @@ Clientes:: Clientes( string Hora_llegada,  string Dia_llegada,  string Direccion
  * @param Articulo
  * @return Articulo
  */
-Articulo Clientes::cambiar( Articulo) {
-    return ;
+Articulo Clientes::cambiar( Articulo ar) {
+    return ar;
 }
 
 /**
@@ -73,11 +73,11 @@ void Clientes::mostrarFoto() {
 void Clientes::mostrarArtRoto() {
     return;
 }
-list<Articulo> agregarprod(Articulo, list <Articulo>) {
-
+list<Articulo> agregarprod(Articulo, list <Articulo> a) {
+    return a;
 }
-list <Herramientas> agregarher(Herramientas, list<Herramientas>) {
-
+list <Herramientas> agregarher(Herramientas, list<Herramientas> l) {
+    return l;
 }
 
 float Clientes::generarPresupuesto(list<Articulo>art , list<Herramientas> her)
@@ -91,7 +91,7 @@ float Clientes::generarPresupuesto(list<Articulo>art , list<Herramientas> her)
   
        if(itArt->get_stock() == true)
        presupuesto = presupuesto + itArt->get_precio();
-       *itArt++;
+       itArt++;
    };
    for (i = 0; i < her.size(); i++) {
        presupuesto = presupuesto + itHer->get_precioAlquiler()+ itHer->get_precioSeguro();

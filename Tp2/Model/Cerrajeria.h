@@ -20,7 +20,7 @@ string get_tipoDeLlave();
 bool get_stock();
     
 string get_ProductoCerrajeria();
-protected: 
+
     
 ~Cerrajeria();
 private: 

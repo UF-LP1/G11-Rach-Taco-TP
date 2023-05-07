@@ -23,12 +23,12 @@ void atender_cliente( Clientes);
 /**
  * @param Articulo
  */
-float cobrar( Articulo);
+float cobrar( Clientes);
     
 /**
  * @param Herramientas
  */
-float devolverSeguro( Herramientas);
+float devolverSeguro( Herramientas, Clientes);
     
 /**
  * @param Clientes
@@ -46,7 +46,7 @@ string get_apellido();
     
 string get_dni();
 ~Duenyo();
-protected: 
+
     
 
 private: 
