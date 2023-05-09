@@ -8,6 +8,13 @@
 /**
  * Empleado implementation
  */
+Empleado::Empleado(string name, string Apellido, string Dni, unsigned int PrecioServicio, unsigned int Salario):dni(Dni) {
+    this->nombre = name;
+    this->apellido = Apellido;
+    this->precioservicio = PrecioServicio;
+    this->salario = Salario;
+
+}
 
 
 string Empleado::get_nombre() {
@@ -15,24 +22,20 @@ string Empleado::get_nombre() {
 
 }
 
-/**
- * @return string
- */
+
 string Empleado::get_apellido() {
     return this->apellido;
 }
 
-/**
- * @return string
- */
+
 string Empleado::get_dni() {
     return this->dni;
 }
 
-/**
- * @param unsigned int
- * @return void
- */
+unsigned int Empleado::get_precioservicio() {
+    return this->precioservicio;
+}
+
 void Empleado::set_precioservicio (unsigned int pre) {
     this->precioservicio = pre;
 }

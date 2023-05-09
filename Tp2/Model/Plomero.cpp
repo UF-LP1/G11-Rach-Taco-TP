@@ -5,18 +5,8 @@
 
 #include "Plomero.h"
 
-/**
- * Plomero implementation
- */
 
-
-/**
- * @param string
- * @param string
- * @param string
- * @param unsigned int
- */
-Plomero::Plomero(string nombre, string, string, unsigned int) :Empleado(nombre, apellido, dni, precioservicio, salario) {//no se xq salario tiene error
+Plomero::Plomero(string nombre, string apellido, string dni, unsigned int precioServicio, bool arreglo,bool limpieza) :Empleado(nombre, apellido, dni, precioservicio, salario) {//no se xq salario tiene error
     {
 
 }

@@ -12,7 +12,7 @@
 class Despachante: public Empleado { //falta constructor
 public: 
     
-Despachante(string Nombre,string Apellido,const string Dni,unsigned int PrecioServicio,string Vehiculo,unsigned int CantPedidios);
+Despachante(string Nombre,string Apellido, string Dni,unsigned int PrecioServicio,string Vehiculo,unsigned int CantPedidos);
     
 /**
  * @param Clientes
@@ -40,10 +40,7 @@ unsigned int get_cantPedidos();
 
     ~Despachante();
 private: 
-     string nombre;
-    string apellido;
-    const string dni;
-    unsigned int precioservicio;
+    
     string vehiculo;
     unsigned int cantPedidos;
  

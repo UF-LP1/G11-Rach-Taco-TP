@@ -1,14 +1,23 @@
-﻿  ArtFerreteria.cpp
-  Cerrajeria.cpp
-  Cerrajero.cpp
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Cerrajero.cpp(19,65): error C2512: 'Empleado': no appropriate default constructor available
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Empleado.h(14,7): message : see declaration of 'Empleado'
+﻿  Cerrajero.cpp
   Clientes.cpp
   Despachante.cpp
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Despachante.cpp(13,204): error C2065: 'Salario': undeclared identifier
   Duenyo.cpp
   Empleado.cpp
   Plomero.cpp
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(19,61): error C2512: 'Empleado': no appropriate default constructor available
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Empleado.h(14,7): message : see declaration of 'Empleado'
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(27,30): error C2601: 'Plomero::get_nombre': local function definitions are illegal
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(19): message : this line contains a '{' which has not yet been matched
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(34,32): error C2601: 'Plomero::get_apellido': local function definitions are illegal
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(19): message : this line contains a '{' which has not yet been matched
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(41,27): error C2601: 'Plomero::get_dni': local function definitions are illegal
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(19): message : this line contains a '{' which has not yet been matched
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(49,53): error C2601: 'Plomero::set_precioservicio': local function definitions are illegal
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(19): message : this line contains a '{' which has not yet been matched
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(56,33): error C2601: 'Plomero::trabajoPlomeria': local function definitions are illegal
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(19): message : this line contains a '{' which has not yet been matched
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(63,40): error C2601: 'Plomero::get_limpiezaTuberias': local function definitions are illegal
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(19): message : this line contains a '{' which has not yet been matched
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(70,44): error C2601: 'Plomero::get_mantenimientoTuberia': local function definitions are illegal
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(19): message : this line contains a '{' which has not yet been matched
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(74,19): error C2064: term does not evaluate to a function taking 1 arguments
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(19): fatal error C1075: '{': no matching token found
   Generating Code...

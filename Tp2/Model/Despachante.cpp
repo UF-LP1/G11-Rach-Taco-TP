@@ -5,12 +5,10 @@
 
 #include "Despachante.h"
 
-/**
- * Despachante implementation
- */
 
 
- Despachante::Despachante(string Nombre, string Apellido, const string Dni, unsigned int PrecioServicio, string Vehiculo, unsigned int CantPedidios):Empleado( Nombre,  Apellido,   Dni,   PrecioServicio, salario) {//no se xq salario tiene error
+
+ Despachante::Despachante(string Nombre, string Apellido, string Dni, unsigned int PrecioServicio, string Vehiculo, unsigned int CantPedidios):Empleado( Nombre,  Apellido,   Dni,   PrecioServicio, salario) {//no se xq salario tiene error
 
 }
 

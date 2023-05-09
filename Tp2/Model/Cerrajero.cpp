@@ -16,7 +16,10 @@
  * @param string
  * @param unsigned int
  */
- Cerrajero::Cerrajero( string,  string,  string,  unsigned int):Empleado( nombre,  apellido,   dni,   precioservicio, salario) { //no se xq me sale error aca
+ Cerrajero::Cerrajero( string Nombre,  string Apellido,  string Dni,  unsigned int Precio, string tipollave):Empleado( Nombre,  Apellido,   Dni,   precioservicio, salario) { //no se xq me sale error aca
+     this->nombre = Nombre;
+     this->apellido = Apellido;
+     
 
 }
 

@@ -12,13 +12,8 @@
 class Plomero: public Empleado { //corregir contructor
 public: 
     
-/**
- * @param string
- * @param string
- * @param string
- * @param unsigned int
- */
- Plomero( string,  string,  string,  unsigned int);
+
+ Plomero( string Nombre,  string Apellido,  string Dni,  unsigned int Precio,bool arreglo,bool limpieza);
     
 string get_nombre();
     
@@ -40,13 +35,9 @@ string get_mantenimientoTuberia();
     
     ~Plomero();
 private: 
-    const string nombre;
-    const string apellido;
-    const string dni;
-    unsigned int precioservicio;
-    string herramientasPlomeria;
-    string mantenimientoTuberias;
-    string limpiezaTuberias;
+
+    bool ArregloTuberias;
+    bool limpiezaTuberias;
 };
 
 #endif //_PLOMERO_H

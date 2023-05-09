@@ -13,7 +13,7 @@ using namespace std;
 
 class Empleado { //falta constructor y destructor
 public:
-    Empleado(string name, string Apellido, const string Dni, unsigned int PrecioServicio, unsigned int Salario);
+    Empleado(string name, string Apellido, string Dni, unsigned int PrecioServicio, unsigned int Salario);
 
     string get_nombre();
 
@@ -21,12 +21,10 @@ public:
 
     string get_dni();
     unsigned int get_salario();
-    void set_salario(unsigned int);
+    void set_salario(unsigned int sal);
 
-    /**
-     * @param unsigned int
-     */
-    void set_precioservicio(unsigned int);
+    unsigned int get_precioservicio();
+    void set_precioservicio(unsigned int pserv);
     ~Empleado();
     friend class Plomero;
     friend class Cerrajero;

@@ -19,7 +19,7 @@ public:
  * @param unsigned int
  * @param string
  */
- Cerrajero( string,  string,  string,  unsigned int);
+    Cerrajero(string Nombre, string Apellido, string Dni, unsigned int Precio, string tipollave): dni(Dni);
     
 /**
  * @param Clientes
@@ -44,11 +44,9 @@ string get_tipoDeLlave();
     
     ~Cerrajero();
 private: 
-    const string nombre;
-    const string apellido;
-    const string dni;
-    unsigned int precioservicio;
-    string herramientasCerrajeria;
+   
+    
+
     string tipoDeLLave;
 };
 

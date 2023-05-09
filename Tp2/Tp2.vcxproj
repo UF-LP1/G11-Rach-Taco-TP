@@ -157,7 +157,6 @@
     <ClCompile Include="Model\Plomero.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Main.h" />
     <ClInclude Include="Model\ArtFerreteria.h" />
     <ClInclude Include="Model\Articulo.h" />
     <ClInclude Include="Model\Banyo.h" />
