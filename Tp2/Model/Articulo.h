@@ -16,11 +16,7 @@ using namespace std;
 class Articulo{
 public: 
     
-/**
- * @param string
- * @param bool
- * @param string
- */
+
 Articulo( float Precio, bool Cambio,string EstadoArticulo,   string TipoDeProducto, bool Stock);
     
 float get_precio();
@@ -29,18 +25,18 @@ bool get_cambio();
     
 string get_estadoArticulo();
  
-
-
-
-
-/**
- * @param float
- */
-void set_precio( float);
-    
 string get_tipoDeProducto();
-    
+
 bool get_stock();
+
+
+void set_precio( float pre);
+void set_cambio(bool cam);
+void set_estadoArticulo(string estado);
+void set_tipoDeProducto(string tipo);
+void set_stock(bool);
+    
+
 
 
 

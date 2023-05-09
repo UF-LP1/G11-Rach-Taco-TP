@@ -27,8 +27,8 @@ string get_ProductoFerreteria();
     
 ~ ArtFerreteria();
 private: 
-    string tipoDeProducto;
-    bool stock;
+  
+   
     string ProductoFerreteria;
 };
 

@@ -24,9 +24,9 @@ string get_ProductoCerrajeria();
     
 ~Cerrajeria();
 private: 
-    string tipodeproducto;
+   
     string tipoDeLlave;
-    bool stock;
+    
     string ProductoCerrajeria;
    
 };

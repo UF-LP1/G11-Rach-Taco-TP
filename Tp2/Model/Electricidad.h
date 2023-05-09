@@ -27,8 +27,8 @@ string get_ProductoElectricidad();
     
  ~Electricidad();
 private: 
-     string tipoDeProducto;
-    bool stock;
+    
+  
     string ProductoElectricidad;
 };
 

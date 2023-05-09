@@ -27,8 +27,8 @@ protected:
     
 ~Banyo();
 private: 
-    string tipoDeProducto;
-    bool stock;
+   
+    
     string ProductoBanyo;
 };
 

@@ -26,8 +26,8 @@ string get_ProductoCocina();
 
  ~Cocina();
 private: 
-    string tipoDeProducto;
-    bool stock;
+    
+    
     string ProductoCocina;
 };
 

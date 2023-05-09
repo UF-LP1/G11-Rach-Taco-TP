@@ -27,8 +27,8 @@ string get_ProductoBazar();
     
 ~ Bazar();
 private: 
-     string tipoDeProducto;
-    bool stock;
+     
+   
     string ProductoBazar;
 };
 
