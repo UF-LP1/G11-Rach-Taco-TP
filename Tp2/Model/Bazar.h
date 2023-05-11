@@ -12,15 +12,10 @@
 class Bazar: public Articulo {
 public: 
     
-/**
- * @param string
- * @param bool
- */
-    Bazar(string TipoDeProducto, bool Stock, string productoDeBazar, float Precio, bool Cambio, string EstadoArticulo);
+
+    Bazar(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string prouctodeBazar);
     
-string get_tipoDeProducto();
-    
-bool get_stock();
+
     
 string get_ProductoBazar();
 

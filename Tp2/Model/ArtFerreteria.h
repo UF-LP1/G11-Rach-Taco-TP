@@ -1,6 +1,4 @@
-/**
- * Project Untitled
- */
+
 
 
 #ifndef _ARTFERRETERIA_H
@@ -11,16 +9,10 @@
 
 class ArtFerreteria: public Articulo {
 public: 
-    ArtFerreteria(string TipoDeProducto, bool Stock, string productoDeFerreteria, float Precio, bool Cambio, string EstadoArticulo);
-/**
- * @param string
- * @param bool
- */
+    ArtFerreteria(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string prouctodeFerreteria);
 
     
-string get_tipoDeProducto();
-    
-bool get_stock();
+
     
 string get_ProductoFerreteria();
 

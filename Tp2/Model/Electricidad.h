@@ -16,12 +16,9 @@ public:
  * @param string
  * @param bool
  */
-    Electricidad(string TipoDeProducto, bool Stock, string productoDeElectricidad, float Precio, bool Cambio, string EstadoArticulo);
+    Electricidad(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string productoDeElectricidad );
     
-string get_tipoDeProducto();
-    
-bool get_stock();
-    
+
 string get_ProductoElectricidad();
 
     

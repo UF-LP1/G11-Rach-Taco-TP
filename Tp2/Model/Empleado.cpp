@@ -1,13 +1,9 @@
-/**
- * Project Untitled
- */
+
 
 
 #include "Empleado.h"
 
-/**
- * Empleado implementation
- */
+
 Empleado::Empleado(string name, string Apellido, string Dni, unsigned int PrecioServicio, unsigned int Salario):dni(Dni) {
     this->nombre = name;
     this->apellido = Apellido;
@@ -39,8 +35,20 @@ unsigned int Empleado::get_precioservicio() {
 void Empleado::set_precioservicio (unsigned int pre) {
     this->precioservicio = pre;
 }
+void Empleado::trabajar()
+{
+
+}
 unsigned int Empleado::get_salario() {
     return this->salario;
+}
+void Empleado::set_nombre(string nom)
+{
+    this->nombre = nom;
+}
+void Empleado::set_apellido(string ape)
+{
+    this->apellido = ape;
 }
 void Empleado::set_salario(unsigned int sal) {
     this->salario = sal;

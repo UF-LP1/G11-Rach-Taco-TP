@@ -12,25 +12,12 @@
 class Despachante: public Empleado { //falta constructor
 public: 
     
-Despachante(string Nombre,string Apellido, string Dni,unsigned int PrecioServicio,string Vehiculo,unsigned int CantPedidos);
+Despachante(string Nombre, string Apellido, const string Dni, unsigned int PrecioServicio, unsigned int salario, string Vehiculo, unsigned int CantPedidos);
     
-/**
- * @param Clientes
- */
-void despachar( Clientes);
+void set_vehiculo(string vehi);
+void set_cantidadPedidos(unsigned int cant);
     
-string get_nombre();
-    
-string get_apellido();
-    
-string get_dni();
-    
-/**
- * @param unsigned int
- */
-void set_precioservicio( unsigned int);
-    
-bool trabajoDespachar();
+void trabajar();
     
 string get_vehiculo();
     

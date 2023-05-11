@@ -12,13 +12,8 @@ using namespace std;
 class Herramientas {
 public: 
     
-/**
- * @param float
- * @param float
- * @param string
- * @param string
- */
-Herramientas(float PrecioAlquiler, float PrecioSeguro, const string Modelo, string Condicion);
+
+Herramientas(float PrecioAlquiler, float PrecioSeguro, const string Modelo, string Condicion, unsigned int horasalq);
     
 string get_condicion();
     
@@ -27,16 +22,15 @@ float get_precioAlquiler();
 float get_precioSeguro();
     
 string get_modelo();
+unsigned int get_HorasDeAlquiler();
+
     
-/**
- * @param float
- */
-void set_precioAlquiler( float);
-    
-/**
- * @param float
- */
-void set_precioSeguro(float);
+
+void set_precioAlquiler( float prec);
+void set_condicion(string cond);
+void set_HorasDeAlquiler(unsigned int horas);
+
+void set_precioSeguro(float precseg);
 ~Herramientas();
 
 
@@ -45,6 +39,7 @@ private:
     float precioSeguro;
     const string modelo;
     string condicion;
+    unsigned int HorasDeAlquiler;
     
 };
 

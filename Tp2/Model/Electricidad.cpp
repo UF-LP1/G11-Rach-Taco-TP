@@ -5,41 +5,24 @@
 
 #include "Electricidad.h"
 
-/**
- * Electricidad implementation
- */
+#include "Electricidad.h"
 
 
-/**
- * @param string
- * @param bool
- */
- Electricidad::Electricidad(string TipoDeProducto, bool Stock, string ProductoDeElectricidad, float Precio, bool Cambio, string EstadoArticulo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
+
+
+ Electricidad::Electricidad(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string ProductoDeElectricidad ) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock) {
      
      this->stock = Stock;
      this->tipoDeProducto = TipoDeProducto;
      this->ProductoElectricidad = ProductoDeElectricidad;
      this->precio = Precio;
+   
 
 }
 
-/**
- * @return string
- */
-string Electricidad::get_tipoDeProducto() {
-    return this->tipoDeProducto;
-}
 
-/**
- * @return bool
- */
-bool Electricidad::get_stock() {
-    return this->stock;
-}
 
-/**
- * @return enum
- */
+
 string Electricidad::get_ProductoElectricidad() {
     return this->ProductoElectricidad;
 }

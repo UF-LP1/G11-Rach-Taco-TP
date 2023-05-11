@@ -16,12 +16,9 @@ public:
  * @param string
  * @param bool
  */
- Banyo(string TipoDeProducto, bool Stock, string productoDeBanyo, float Precio, bool Cambio, string EstadoArticulo);
+ Banyo(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string productodeBanyo);
     
-string get_tipoDeProducto();
-    
-bool get_stock();
-    
+
 string get_ProductoBanyo();
 protected: 
     

@@ -1,6 +1,3 @@
-/**
- * Project Untitled
- */
 
 
 #include "Despachante.h"
@@ -8,71 +5,35 @@
 
 
 
- Despachante::Despachante(string Nombre, string Apellido, string Dni, unsigned int PrecioServicio, string Vehiculo, unsigned int CantPedidios):Empleado( Nombre,  Apellido,   Dni,   PrecioServicio, salario) {//no se xq salario tiene error
+ Despachante::Despachante(string Nombre, string Apellido,const string Dni,unsigned int PrecioServicio, unsigned int salario ,string Vehiculo, unsigned int CantPedidos) :Empleado( Nombre,  Apellido,   Dni,   PrecioServicio, salario) {
 
 }
 
-/**
- * @param Clientes
- * @return void
- */
-void Despachante::despachar( Clientes) {
-    return;
+
+ void Despachante::trabajar() {
+
 }
 
-/**
- * @return string
- */
-string Despachante::get_nombre() {
-    return this->nombre;
+
+void Despachante::set_vehiculo(string vehi)
+{
+    this->vehiculo = vehi;
 }
 
-/**
- * @return string
- */
-string Despachante::get_apellido() {
-    return this->apellido;
+void Despachante::set_cantidadPedidos(unsigned int cant)
+{
+    this->cantPedidos = cant;
 }
 
-/**
- * @return string
- */
-string Despachante::get_dni() {
-    return this->dni;
-}
-
-/**
- * @param unsigned int
- * @return void
- */
-void Despachante::set_precioservicio( unsigned int f) {
-    this->precioservicio = f;
-}
-
-/**
- * @return bool
- */
-bool Despachante::trabajoDespachar() {
-    return false;
-}
-
-/**
- * @return string
- */
 string Despachante::get_vehiculo() {
     return this->vehiculo;
 }
 
-/**
- * @return unsigned int
- */
+
 unsigned int Despachante::get_cantPedidos() {
     return this->cantPedidos;
 }
 
-/**
- * @return enum
- */
 
 
  Despachante::~Despachante() {

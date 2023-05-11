@@ -9,28 +9,21 @@
 #include "Empleado.h"
 
 
-class Plomero: public Empleado { //corregir contructor
+class Plomero: public Empleado { 
 public: 
     
 
- Plomero( string Nombre,  string Apellido,  string Dni,  unsigned int Precio,bool arreglo,bool limpieza);
+ Plomero(string Nombre,  string Apellido, const string Dni,unsigned int precioservicio, unsigned int salario,bool arreglo,bool limpieza);
     
-string get_nombre();
+ 
+ void trabajar();
+
     
-string get_apellido();
+
     
-string get_dni();
+bool get_limpiezaTuberias();
     
-/**
- * @param unsigned int
- */
-void set_precioservicio( unsigned int);
-    
-void trabajoPlomeria();
-    
-string get_limpiezaTuberias();
-    
-string get_mantenimientoTuberia();
+bool get_mantenimientoTuberia();
  
     
     ~Plomero();

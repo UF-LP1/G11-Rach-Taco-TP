@@ -13,31 +13,15 @@
 class Cerrajero: public Empleado {
 public: 
     
-/**
- * @param string
- * @param string
- * @param unsigned int
- * @param string
- */
-    Cerrajero(string Nombre, string Apellido, string Dni, unsigned int Precio, string tipollave): dni(Dni);
+
+    Cerrajero(string Nombre, string Apellido, const string Dni,unsigned int precioservicio, unsigned int salario, unsigned int Precio, string tipollave);
     
-/**
- * @param Clientes
- */
-void  cerrajeria( Clientes);
+
+
     
-string get_nombre();
+    void trabajar();
     
-string get_apellido();
-    
-string get_dni();
-    
-/**
- * @param unsigned int
- */
-void set_precioservicio( unsigned int);
-    
-void trabajoCerrajeria();
+
     
 string get_tipoDeLlave();
 

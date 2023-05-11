@@ -1,6 +1,4 @@
-/**
- * Project Untitled
- */
+
 
 
 #ifndef _EMPLEADO_H
@@ -11,9 +9,9 @@
 using namespace std;
 #include "Clientes.h"
 
-class Empleado { //falta constructor y destructor
+class Empleado { 
 public:
-    Empleado(string name, string Apellido, string Dni, unsigned int PrecioServicio, unsigned int Salario);
+    Empleado(string name, string Apellido,const string Dni, unsigned int PrecioServicio, unsigned int Salario);
 
     string get_nombre();
 
@@ -21,10 +19,16 @@ public:
 
     string get_dni();
     unsigned int get_salario();
+
+    void set_nombre(string nom);
+    void set_apellido(string ape);
     void set_salario(unsigned int sal);
 
     unsigned int get_precioservicio();
     void set_precioservicio(unsigned int pserv);
+
+    virtual void trabajar();
+
     ~Empleado();
     friend class Plomero;
     friend class Cerrajero;
