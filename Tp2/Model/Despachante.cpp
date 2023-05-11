@@ -6,7 +6,8 @@
 
 
  Despachante::Despachante(string Nombre, string Apellido,const string Dni,unsigned int PrecioServicio, unsigned int salario ,string Vehiculo, unsigned int CantPedidos) :Empleado( Nombre,  Apellido,   Dni,   PrecioServicio, salario) {
-
+     this->vehiculo = Vehiculo;
+     this->cantPedidos = CantPedidos;
 }
 
 

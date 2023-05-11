@@ -1,113 +1,83 @@
-/**
- * Project Untitled
- */
+
 
 
 #include "Clientes.h"
 
 
 
-/**
- * Clientes implementation
- */
-
-
-/**
- * @param string
- * @param string
- * @param string
- */
-Clientes:: Clientes( string Hora_llegada,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her) {
+Clientes:: Clientes( string Hora_llegada,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her): horaDeLlegada(Hora_llegada),diaDeLlegada(Dia_llegada) {
+    this->direccion = Direccion;
 
 }
 
 
 
-/**
- * @param Articulo
- * @return Articulo
- */
+
 Articulo Clientes::cambiar( Articulo ar) {
     return ar;
 }
 
-/**
- * @return string
- */
+
 string Clientes::get_horaDeLlegada() {
     return this->horaDeLlegada;
 }
 
-/**
- * @return string
- */
+
 string Clientes::get_diaDeLlegada() {
     return this->diaDeLlegada;
 }
 
-/**
- * @param Herramientas
- * @return void
- */
-void Clientes::alquilar( Herramientas) {
-    return;
-}
 
-/**
- * @return string
- */
+
+
 string Clientes::get_direccion() {
     return this->direccion;
 }
 
-/**
- * @return void
- */
+
 void Clientes::mostrarFoto() {
     return;
 }
 
-/**
- * @return void
- */
+
 void Clientes::mostrarArtRoto() {
     return;
 }
-list<Articulo> agregarprod(Articulo, list <Articulo> a) {
-    return a;
+void Clientes::agregarart(Articulo) {
+    
 }
-list <Herramientas> agregarher(Herramientas, list<Herramientas> l) {
-    return l;
+void Clientes::agregarher(Herramientas) {
+
+    
 }
 
-float Clientes::generarPresupuesto(list<Articulo>art , list<Herramientas> her)
+float Clientes::generarPresupuesto()
 {
    float presupuesto=0;
    int i=0;
-   list<Articulo>::iterator itArt = art.begin();
-   list<Herramientas>::iterator itHer = her.begin();
+
+   list<Articulo>::iterator itArt = this->carritoart.begin();
+   list<Herramientas>::iterator itHer = this->carritoh.begin();
    
-   for (i = 0; i < art.size();i++) {
+   for (i = 0; i < this->carritoart.size();i++) {
   
        if(itArt->get_stock() == true)
        presupuesto = presupuesto + itArt->get_precio();
        itArt++;
    };
-   for (i = 0; i < her.size(); i++) {
-       presupuesto = presupuesto + itHer->get_precioAlquiler()+ itHer->get_precioSeguro();
+   for (i = 0; i < this->carritoh.size(); i++) {
+       presupuesto = presupuesto + (itHer->get_precioAlquiler()*itHer->get_HorasDeAlquiler() )+ itHer->get_precioSeguro();
        itHer++;
    }
 
     return presupuesto;
 }
 
-/**
- * @param string
- * @return void
- */
+
 void Clientes::set_direccion( string Direc) {
     this->direccion=Direc;
 }
+
 
  Clientes::~Clientes() {
 
