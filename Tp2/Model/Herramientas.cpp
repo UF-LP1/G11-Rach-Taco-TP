@@ -4,7 +4,7 @@
 #include "Herramientas.h"
 
 
-Herramientas::Herramientas(float PrecioAlquiler, float PrecioSeguro, const string Modelo, string Condicion, unsigned int horasalq):modelo(Modelo) {
+Herramientas::Herramientas(float PrecioAlquiler, float PrecioSeguro, const string Modelo, string Condicion, int horasalq):modelo(Modelo) {
     this->precioAlquiler = PrecioAlquiler;
     this->precioSeguro = PrecioSeguro;
     this->condicion = Condicion;
@@ -32,7 +32,7 @@ string Herramientas::get_modelo() {
     return this->modelo;
 }
 
-unsigned int Herramientas::get_HorasDeAlquiler()
+ int Herramientas::get_HorasDeAlquiler()
 {
     return this->HorasDeAlquiler;
 }
@@ -48,7 +48,7 @@ void Herramientas::set_condicion(string cond)
 
 }
 
-void Herramientas::set_HorasDeAlquiler(unsigned int horas)
+void Herramientas::set_HorasDeAlquiler( int horas)
 {
     this->HorasDeAlquiler = horas;
 }

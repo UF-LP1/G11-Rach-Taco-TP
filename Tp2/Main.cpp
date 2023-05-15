@@ -31,9 +31,13 @@ int main() {
 	list<Herramientas> ric2;
 	Banyo ll = { 500,false,"buen estado","Banyo",true,"Cortina" };
 	Cocina kk = { 10000,false,"Excelente","Cocina",true,"Horno" };
+	Electricidad ii = { 3,false,"ok","electro",true,"enchufe" };
+	Herramientas gg = { 421,15000,"pedro","gastada",8 };
 	Clientes Ricardo = { "Ricardo","Sanchez","45571328","16:45","Lunes","san lorenzo 565",ric,ric2 };
+	Ricardo.agregarher(gg);
 	Ricardo.agregarart(ll);
 	Ricardo.agregarart(kk);
+	Ricardo.agregarart(ii);
 	pre=Ricardo.generarPresupuesto();
 
 	cout << "su presupusto es:" << pre;

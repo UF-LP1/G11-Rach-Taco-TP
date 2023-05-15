@@ -12,6 +12,21 @@ Clientes:: Clientes(string nombre,string apellido,const string dni, string Hora_
 
 }
 
+string Clientes::get_nombre() {
+    return this->Nombre;
+}
+void Clientes::set_nombre(string nom) {
+    this->Nombre = nom;
+}
+string Clientes::get_apellido() {
+    return this->Apellido;
+}
+void Clientes::set_apellido(string ape) {
+    this->Apellido = ape;
+}
+string Clientes::get_dni() {
+    return this->DNI;
+}
 
 
 
@@ -56,8 +71,10 @@ void Clientes::agregarher(Herramientas her) {
 
 float Clientes::generarPresupuesto()
 {
-   float presupuesto=0;
-   int i=0;
+   float presupuestoart=0;
+   float presupuestoher = 0;
+   float pretotal;
+   int i=0,k=0;
 
    list<Articulo>::iterator itArt = this->carritoart.begin(); //igualo el iterador al principio de la lista
    list<Herramientas>::iterator itHer = this->carritoh.begin(); //igualo el iterador al principio de la lista
@@ -65,15 +82,17 @@ float Clientes::generarPresupuesto()
    for (i = 0; i < this->carritoart.size();i++) { //recorro las listas y acumulo los precios
   
        if(itArt->get_stock() == true)
-       presupuesto = presupuesto + itArt->get_precio();
+       presupuestoart = presupuestoart + itArt->get_precio();
        itArt++;
    };
-   for (i = 0; i < this->carritoh.size(); i++) {
-       presupuesto = presupuesto + (itHer->get_precioAlquiler()*itHer->get_HorasDeAlquiler() )+ itHer->get_precioSeguro(); //multiplico el precio por las horas alquiladas
+   for (k = 0; k < this->carritoh.size(); k++) {
+       int horas = itHer->get_HorasDeAlquiler();
+    
+       presupuestoher = presupuestoher + (itHer->get_precioAlquiler() *horas )+ itHer->get_precioSeguro(); //multiplico el precio por las horas alquiladas
        itHer++;
    }
-
-    return presupuesto;
+   pretotal = presupuestoart + presupuestoher;
+    return pretotal;
 }
 
 
