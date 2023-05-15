@@ -1,25 +1,2 @@
 ﻿  Main.cpp
-  ArtFerreteria.cpp
-  Articulo.cpp
-  Banyo.cpp
-  Bazar.cpp
-  Cerrajeria.cpp
-  Cerrajero.cpp
-  Clientes.cpp
-  Cocina.cpp
-  Despachante.cpp
-  Duenyo.cpp
-  Electricidad.cpp
-  Empleado.cpp
-  Ferreteria.cpp
-  Herramientas.cpp
-  Plomero.cpp
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(20,19): error C2601: 'Plomero::trabajar': local function definitions are illegal
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(7): message : this line contains a '{' which has not yet been matched
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(27,38): error C2601: 'Plomero::get_limpiezaTuberias': local function definitions are illegal
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(7): message : this line contains a '{' which has not yet been matched
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(31,42): error C2601: 'Plomero::get_mantenimientoTuberia': local function definitions are illegal
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(7): message : this line contains a '{' which has not yet been matched
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(35,19): error C2064: term does not evaluate to a function taking 1 arguments
-C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Plomero.cpp(7): fatal error C1075: '{': no matching token found
-  Generating Code...
+  Tp2.vcxproj -> C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\x64\Debug\Tp2.exe

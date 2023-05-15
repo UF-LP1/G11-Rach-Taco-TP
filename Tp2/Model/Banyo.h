@@ -15,7 +15,7 @@ public:
     
 
 string get_ProductoBanyo();
-protected: 
+ 
     
 ~Banyo();
 private: 

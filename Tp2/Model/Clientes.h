@@ -18,8 +18,14 @@ class Clientes {
 public: 
     
 
-Clientes( string Hora_llegada ,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her);
+Clientes(string nombre,string apellido,const string dni, string Hora_llegada ,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her);
 
+
+string get_nombre();
+void set_nombre(string name);
+string get_apellido();
+void set_apellido(string ape);
+string get_dni();
 Articulo cambiar( Articulo);
     
 string get_horaDeLlegada();
@@ -46,6 +52,9 @@ void agregarher(Herramientas her);
     
 ~Clientes();
 private: 
+    string Nombre;
+    string Apellido;
+    const string DNI;
     const string horaDeLlegada;
     const string diaDeLlegada;
     string direccion;

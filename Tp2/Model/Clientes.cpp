@@ -5,8 +5,10 @@
 
 
 
-Clientes:: Clientes( string Hora_llegada,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her): horaDeLlegada(Hora_llegada),diaDeLlegada(Dia_llegada) {
+Clientes:: Clientes(string nombre,string apellido,const string dni, string Hora_llegada,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her): horaDeLlegada(Hora_llegada),diaDeLlegada(Dia_llegada),DNI(dni) {
     this->direccion = Direccion;
+    this->Nombre = nombre;
+    this->Apellido = apellido;
 
 }
 
@@ -43,11 +45,12 @@ void Clientes::mostrarFoto() {
 void Clientes::mostrarArtRoto() {
     return;
 }
-void Clientes::agregarart(Articulo) {
-    
-}
-void Clientes::agregarher(Herramientas) {
+void Clientes::agregarart(Articulo art) {
+    this->carritoart.push_back(art);
 
+}
+void Clientes::agregarher(Herramientas her) {
+    this->carritoh.push_back(her);
     
 }
 

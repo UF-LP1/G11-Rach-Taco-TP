@@ -1,4 +1,4 @@
-
+/*
 
 
 #include "Plomero.h"
@@ -34,4 +34,4 @@ bool Plomero::get_mantenimientoTuberia() {
 
  Plomero::~Plomero() {
 
-}
+}*/
