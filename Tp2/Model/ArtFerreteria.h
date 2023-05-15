@@ -9,7 +9,7 @@
 
 class ArtFerreteria: public Articulo {
 public: 
-    ArtFerreteria(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string prouctodeFerreteria);
+ArtFerreteria(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string prouctodeFerreteria);
 
     
 

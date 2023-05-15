@@ -1,6 +1,4 @@
-/**
- * Project Untitled
- */
+
 
 
 #ifndef _BAZAR_H
@@ -13,7 +11,7 @@ class Bazar: public Articulo {
 public: 
     
 
-    Bazar(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string prouctodeBazar);
+Bazar(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string prouctodeBazar);
     
 
     

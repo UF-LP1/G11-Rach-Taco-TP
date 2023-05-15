@@ -56,17 +56,17 @@ float Clientes::generarPresupuesto()
    float presupuesto=0;
    int i=0;
 
-   list<Articulo>::iterator itArt = this->carritoart.begin();
-   list<Herramientas>::iterator itHer = this->carritoh.begin();
+   list<Articulo>::iterator itArt = this->carritoart.begin(); //igualo el iterador al principio de la lista
+   list<Herramientas>::iterator itHer = this->carritoh.begin(); //igualo el iterador al principio de la lista
    
-   for (i = 0; i < this->carritoart.size();i++) {
+   for (i = 0; i < this->carritoart.size();i++) { //recorro las listas y acumulo los precios
   
        if(itArt->get_stock() == true)
        presupuesto = presupuesto + itArt->get_precio();
        itArt++;
    };
    for (i = 0; i < this->carritoh.size(); i++) {
-       presupuesto = presupuesto + (itHer->get_precioAlquiler()*itHer->get_HorasDeAlquiler() )+ itHer->get_precioSeguro();
+       presupuesto = presupuesto + (itHer->get_precioAlquiler()*itHer->get_HorasDeAlquiler() )+ itHer->get_precioSeguro(); //multiplico el precio por las horas alquiladas
        itHer++;
    }
 

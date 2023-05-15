@@ -1,6 +1,4 @@
-/**
- * Project Untitled
- */
+
 
 
 #ifndef _BANYO_H
@@ -12,10 +10,7 @@
 class Banyo: public Articulo {
 public: 
     
-/**
- * @param string
- * @param bool
- */
+
  Banyo(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string productodeBanyo);
     
 

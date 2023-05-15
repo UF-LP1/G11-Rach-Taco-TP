@@ -17,7 +17,7 @@ Despachante(string Nombre, string Apellido, const string Dni, unsigned int Preci
 void set_vehiculo(string vehi);
 void set_cantidadPedidos(unsigned int cant);
     
-void trabajar();
+void trabajar(); //metodo polimorfico de Empleado
     
 string get_vehiculo();
     

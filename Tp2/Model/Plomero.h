@@ -1,6 +1,3 @@
-/**
- * Project Untitled
- */
 
 
 #ifndef _PLOMERO_H
@@ -13,10 +10,10 @@ class Plomero: public Empleado {
 public: 
     
 
- Plomero(string Nombre,  string Apellido, const string Dni,unsigned int precioservicio, unsigned int salario,bool arreglo,bool limpieza);
+ Plomero(string nombre, string apellido, const string dni, unsigned int precioservicio, unsigned int salario, bool arreglo, bool limpieza); 
     
  
- void trabajar();
+ void trabajar(); //funcion polimorfica de Empleado
 
     
 

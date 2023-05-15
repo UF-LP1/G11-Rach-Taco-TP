@@ -1,6 +1,3 @@
-/**
- * Project Untitled
- */
 
 
 #ifndef _DUENYO_H
@@ -10,48 +7,39 @@
 using namespace std;
 #include "Clientes.h"
 
-class Duenyo { //falta constructor
+class Duenyo { 
 public: 
     
- Duenyo();
+ Duenyo(string nombre, string apellido,const string dni);
     
-/**
- * @param Clientes
- */
-void atender_cliente( Clientes);
+
+void atender_cliente( Clientes cli);
     
-/**
- * @param Articulo
- */
-float cobrar( Clientes);
+
+float cobrar( Clientes cli);
     
-/**
- * @param Herramientas
- */
-float devolverSeguro( Herramientas, Clientes);
+
+float devolverSeguro( Herramientas her, Clientes cli) ;
     
-/**
- * @param Clientes
- */
-void identificarArticulo( Clientes);
+
+void identificarArticulo( Clientes cli);
     
-/**
- * @param Clientes
- */
-float devolverDif( Clientes);
+
     
 string get_nombre();
     
 string get_apellido();
     
 string get_dni();
+void set_nombre(string name);
+void set_apellido(string ape);
 ~Duenyo();
 
     
 
 private: 
-    const string nombre;
-    const string apellido;
+     string Nombre;
+     string Apellido;
     const string dni;
 };
 

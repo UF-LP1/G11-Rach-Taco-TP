@@ -1,6 +1,4 @@
-/**
- * Project Untitled
- */
+
 
 
 #ifndef _FERRETERIA_H
@@ -13,24 +11,19 @@ class Ferreteria {
 public: 
    
     
-/**
- * @param string
- * @param bool
- */
- Ferreteria( string,  bool, unsigned int);
+
+ Ferreteria( string Direcc,  bool abierto); //direccion puede cambiar asi que no es const
     
-/**
- * @param string
- */
+
 void set_direccion(string);
     
 string get_direccion();
     
 bool get_abierto();
+void set_abierto(bool estado);
     
 
-void set_precioAlquiler(unsigned int); 
-unsigned int get_precioAlquiler(); 
+
 ~Ferreteria();
 
     
@@ -38,7 +31,7 @@ unsigned int get_precioAlquiler();
 private: 
     string direccion;
     bool abierto;
-    unsigned int precioAlquiler;
+   
 };
 
 #endif //_FERRETERIA_H

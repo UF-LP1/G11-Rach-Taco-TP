@@ -1,6 +1,4 @@
-/**
- * Project Untitled
- */
+
 
 
 #ifndef _CERRAJERO_H
@@ -14,12 +12,12 @@ class Cerrajero: public Empleado {
 public: 
     
 
-    Cerrajero(string Nombre, string Apellido, const string Dni,unsigned int precioservicio, unsigned int salario, unsigned int Precio, string tipollave);
+Cerrajero(string Nombre, string Apellido, const string Dni,unsigned int precioservicio, unsigned int salario, unsigned int Precio, string tipollave);
     
 
 
     
-    void trabajar();
+void trabajar(); //metodo polimorfico de Empleado
     
 
     

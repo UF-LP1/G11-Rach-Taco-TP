@@ -1,76 +1,55 @@
-/**
- * Project Untitled
- */
+
 
 
 #include "Duenyo.h"
 
-/**
- * Duenyo implementation
- */
 
 
- Duenyo::Duenyo() {
 
+Duenyo::Duenyo(string name, string ape, const string DNI) :dni(DNI) {
+     this-> Nombre = name;
+     this->Apellido = ape;
 }
 
-/**
- * @param Clientes
- * @return void
- */
+void Duenyo::set_nombre(string name) {
+    this->Nombre = name;
+}
+
+void Duenyo::set_apellido(string ape) {
+    this->Apellido = ape;
+}
 void Duenyo::atender_cliente( Clientes) {
     return;
 }
 
-/**
- * @param Articulo
- * @return float
- */
+
 float Duenyo::cobrar( Clientes) {
     return 0.0;
 }
 
-/**
- * @param Herramientas
- * @return float
- */
+
 float Duenyo::devolverSeguro( Herramientas, Clientes) {
     return 0.0;
 }
 
-/**
- * @param Clientes
- * @return void
- */
+
 void Duenyo::identificarArticulo( Clientes) {
     return;
 }
 
-/**
- * @param Clientes
- * @return float
- */
-float Duenyo::devolverDif( Clientes) {
-    return 0.0;
-}
 
-/**
- * @return string
- */
+
+
 string Duenyo::get_nombre() {
-    return this->nombre;
+    return this->Nombre;
 }
 
-/**
- * @return string
- */
+
 string Duenyo::get_apellido() {
-    return this->apellido;
+    return this->Apellido;
 }
 
-/**
- * @return string
- */
+
 string Duenyo::get_dni() {
     return this->dni;
 }

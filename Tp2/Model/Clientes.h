@@ -38,10 +38,10 @@ float generarPresupuesto();
 
     
 
-void set_direccion( string);
+void set_direccion( string dire);
 
-void agregarart(Articulo);
-void agregarher(Herramientas);
+void agregarart(Articulo art);
+void agregarher(Herramientas her);
 
     
 ~Clientes();

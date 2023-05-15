@@ -34,7 +34,7 @@ void set_precio( float pre);
 void set_cambio(bool cam);
 void set_estadoArticulo(string estado);
 void set_tipoDeProducto(string tipo);
-void set_stock(bool);
+void set_stock(bool sto);
     
 
 

@@ -1,6 +1,4 @@
-/**
- * Project Untitled
- */
+
 
 
 #include "Articulo.h"
