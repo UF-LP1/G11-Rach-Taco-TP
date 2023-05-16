@@ -37,6 +37,9 @@ int main() {
 
 	Herramientas gg = { 421,15000,"pedro","gastada",8 };
 
+	ArtFerreteria oo = { 1,true,"ok","Art.Ferr",false,"tornillo" }; //prueba caso no stock
+
+
 	Clientes Ricardo = { "Ricardo","Sanchez","45571328","16:45","Lunes","san lorenzo 565",ric,ric2 };
 
 
@@ -44,17 +47,30 @@ int main() {
 	Ricardo.agregarart(ll);
 	Ricardo.agregarart(kk);
 	Ricardo.agregarart(ii);
+	Ricardo.agregarart(oo); 
+
+	cout << "Presiona enter para generar presupuesto";
+	getchar();
 
 	pre=Ricardo.generarPresupuesto(); //pruebo generar presupuesto
 
 	
 	cout << "su presupusto es:" << pre<<endl;
 
+	cout << "Presiona enter para funcion polimorfismo Cerrajero";
+	getchar();
+
 	Cerrajero carlos = { "carlos","duarte","45571328",500,500,"magentica" }; //pruebo funcion polimorfismo en cerrajero
 	carlos.trabajar();
 
+	cout << "Presiona enter para funcion polimorfismo Despachante";
+	getchar();
+
 	Despachante Juan = { "Juan","Lopez","52535252",523,522,"Lamborghini Huracan",5 }; //pruebo funcion polimorfismo despachante
 	Juan.trabajar();
+
+	cout << "Presiona enter para funcion polimorfismo Plomero";
+	getchar();
 
 	Plomero Manuel = { "Manuel","Fernandez","67834163",452,265,true,false };
 	Manuel.trabajar();

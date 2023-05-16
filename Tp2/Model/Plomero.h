@@ -16,11 +16,12 @@ public:
  void trabajar(); //funcion polimorfica de Empleado
 
     
-
+ void set_Limpieza(bool limp);
+ void set_Arreglo(bool arreg);
     
 bool get_limpiezaTuberias();
     
-bool get_mantenimientoTuberia();
+bool get_arregloTuberias();
  
     
     ~Plomero();
