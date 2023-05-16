@@ -1,4 +1,4 @@
-/*
+
 
 
 #include "Plomero.h"
@@ -20,6 +20,7 @@ Plomero::Plomero(string nombre, string apellido,const string dni, unsigned int p
     void Plomero::trabajar()
     {
 
+
     }
 
 
@@ -34,4 +35,4 @@ bool Plomero::get_mantenimientoTuberia() {
 
  Plomero::~Plomero() {
 
-}*/
+}

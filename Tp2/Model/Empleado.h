@@ -27,7 +27,11 @@ public:
     unsigned int get_precioservicio();
     void set_precioservicio(unsigned int pserv);
 
+
+
     virtual void trabajar();
+
+
 
     ~Empleado();
     friend class Plomero;

@@ -29,18 +29,35 @@ int main() {
 
 	list<Articulo> ric;
 	list<Herramientas> ric2;
-	Banyo ll = { 500,false,"buen estado","Banyo",true,"Cortina" };
+	Banyo ll = { 500,false,"buen estado","Banyo",true,"Cortina" }; //creo productos y herramientas para agregar al carrito
+
 	Cocina kk = { 10000,false,"Excelente","Cocina",true,"Horno" };
+
 	Electricidad ii = { 3,false,"ok","electro",true,"enchufe" };
+
 	Herramientas gg = { 421,15000,"pedro","gastada",8 };
+
 	Clientes Ricardo = { "Ricardo","Sanchez","45571328","16:45","Lunes","san lorenzo 565",ric,ric2 };
-	Ricardo.agregarher(gg);
+
+
+	Ricardo.agregarher(gg); //agrego productos y herramientas al carrito
 	Ricardo.agregarart(ll);
 	Ricardo.agregarart(kk);
 	Ricardo.agregarart(ii);
-	pre=Ricardo.generarPresupuesto();
 
-	cout << "su presupusto es:" << pre;
+	pre=Ricardo.generarPresupuesto(); //pruebo generar presupuesto
+
+	
+	cout << "su presupusto es:" << pre<<endl;
+
+	Cerrajero carlos = { "carlos","duarte","45571328",500,500,"magentica" }; //pruebo funcion polimorfismo en cerrajero
+	carlos.trabajar();
+
+	Despachante Juan = { "Juan","Lopez","52535252",523,522,"Lamborghini Huracan",5 }; //pruebo funcion polimorfismo despachante
+	Juan.trabajar();
+
+	Plomero Manuel = { "Manuel","Fernandez","67834163",452,265,true,false };
+	Manuel.trabajar();
 	getchar();
 		return 0;
 

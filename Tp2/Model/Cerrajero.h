@@ -12,7 +12,7 @@ class Cerrajero: public Empleado {
 public: 
     
 
-Cerrajero(string Nombre, string Apellido, const string Dni,unsigned int precioservicio, unsigned int salario, unsigned int Precio, string tipollave);
+Cerrajero(string Nombre, string Apellido, const string Dni,unsigned int precioservicio, unsigned int salario, string tipollave);
     
 
 

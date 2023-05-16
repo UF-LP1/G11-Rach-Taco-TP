@@ -35,7 +35,7 @@ unsigned int Empleado::get_precioservicio() {
 void Empleado::set_precioservicio (unsigned int pre) {
     this->precioservicio = pre;
 }
-void Empleado::trabajar()
+ void Empleado::trabajar()
 {
 
 }

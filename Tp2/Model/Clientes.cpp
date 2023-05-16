@@ -80,9 +80,11 @@ float Clientes::generarPresupuesto()
    list<Herramientas>::iterator itHer = this->carritoh.begin(); //igualo el iterador al principio de la lista
    
    for (i = 0; i < this->carritoart.size();i++) { //recorro las listas y acumulo los precios
-  
-       if(itArt->get_stock() == true)
-       presupuestoart = presupuestoart + itArt->get_precio();
+     
+       if (itArt->get_stock() == true)
+           presupuestoart = presupuestoart + itArt->get_precio();
+       else
+           cout << "No hay stock de este producto";
        itArt++;
    };
    for (k = 0; k < this->carritoh.size(); k++) {
