@@ -1,10 +1,4 @@
-
-
-
 #include "Ferreteria.h"
-
-
-
 
 
  Ferreteria::Ferreteria( string Direcc,  bool estado) {

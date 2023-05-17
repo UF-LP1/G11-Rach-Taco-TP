@@ -9,6 +9,7 @@ Clientes:: Clientes(string nombre,string apellido,const string dni, string Hora_
     this->direccion = Direccion;
     this->Nombre = nombre;
     this->Apellido = apellido;
+    
 
 }
 
@@ -79,7 +80,15 @@ void Clientes::agregarher(Herramientas her) {
 list<Articulo> Clientes::get_carritoart() {
     return this->carritoart;
 }
+void Clientes::operator=(Articulo art) {
+    int i = 0;
+    list<Articulo>::iterator itArt = this->carritoart.begin();
+    while (itArt->get_codigo() != art.get_codigo()) {
+        itArt++;
+    }
+    this->carritoart.erase(itArt);
 
+}
 float Clientes::generarPresupuesto()
 {
    float presupuestoart=0;
@@ -90,13 +99,13 @@ float Clientes::generarPresupuesto()
    list<Articulo>::iterator itArt = this->carritoart.begin(); //igualo el iterador al principio de la lista
    list<Herramientas>::iterator itHer = this->carritoh.begin(); //igualo el iterador al principio de la lista
    
-   for (i = 0; i < this->carritoart.size();i++) { //recorro las listas y acumulo los precios
+   for (i = 0; i < this->carritoart.size();i++,itArt++) { //recorro las listas y acumulo los precios
        string art = itArt->get_tipoDeProducto();
        if (itArt->get_stock() == true)
            presupuestoart = presupuestoart + itArt->get_precio();
        else
-           cout << "No hay stock del Articulo numero:"<<i<<"("<<art<<")"<<endl;
-       itArt++;
+           cout << "No hay stock del Articulo numero:"<<++i<<"("<<art<<")"<<endl;
+     
    };
    for (k = 0; k < this->carritoh.size(); k++) {
        int horas = itHer->get_HorasDeAlquiler();

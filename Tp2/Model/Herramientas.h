@@ -33,7 +33,7 @@ void set_HorasDeAlquiler( int horas);
 
 private: 
     float precioAlquiler;
-    static float precioSeguro;
+    float precioSeguro;
     const string modelo;
     string condicion;
     int HorasDeAlquiler;

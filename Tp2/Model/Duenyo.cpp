@@ -5,12 +5,17 @@
 
 
 
+int Duenyo::cantclientes = 0;
 
-Duenyo::Duenyo(string name, string ape, const string DNI) :dni(DNI) {
+Duenyo::Duenyo(string name, string ape, const string DNI, static int cantc) :dni(DNI) {
      this-> Nombre = name;
      this->Apellido = ape;
+     cantclientes++;
 }
-
+//int Duenyo::get_cantclientes() {
+//    return this->canr
+//
+//}
 void Duenyo::set_nombre(string name) {
     this->Nombre = name;
 }
@@ -19,6 +24,7 @@ void Duenyo::set_apellido(string ape) {
     this->Apellido = ape;
 }
 void Duenyo::atender_cliente( Clientes) {
+    cout << "Hola como estas?";
     return;
 }
 
@@ -37,5 +43,5 @@ string Duenyo::get_dni() {
 }
 
  Duenyo::~Duenyo() {
-
+     cantclientes--;
 }

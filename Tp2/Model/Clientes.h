@@ -52,7 +52,7 @@ void agregarher(Herramientas her);
 
 list<Articulo> get_carritoart();
 
-    
+void operator=(Articulo art);
 ~Clientes();
 private: 
     string Nombre;
@@ -63,6 +63,7 @@ private:
     string direccion;
     list<Articulo>carritoart; 
     list<Herramientas>carritoh;
+    
    
 
 };

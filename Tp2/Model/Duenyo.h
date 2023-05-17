@@ -10,7 +10,7 @@ using namespace std;
 class Duenyo { 
 public: 
     
- Duenyo(string nombre, string apellido,const string dni);
+ Duenyo(string nombre, string apellido,const string dni, static int cantc);
     
 
 void atender_cliente( Clientes cli);
@@ -30,6 +30,7 @@ private:
      string Nombre;
      string Apellido;
     const string dni;
+    static int cantclientes;
 };
 
 #endif //_DUENYO_H

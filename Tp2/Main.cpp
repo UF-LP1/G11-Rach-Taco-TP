@@ -13,12 +13,12 @@
 #include "Model/Ferreteria.h"
 #include "Model/Herramientas.h"
 #include "Model/Plomero.h"
-#include <list>
-#include<string>
-#include <iostream>
+//#include <list>
+//#include<string>
+//#include <iostream>
 using namespace std;
 
-Clientes operator-(Clientes cli, Articulo art);
+
 int menu();
 
 
@@ -35,19 +35,48 @@ int main() {
 
 	Electricidad ii = { 3,false,"ok","electro",true,233,"enchufe" };
 
-	Herramientas gg = { 421,15000,"pedro","gastada",8 };
+	Herramientas gg = { 421,15000,"Moladora","gastada",8 };
 
 	ArtFerreteria oo = { 1,true,"ok","Art.Ferr",false,875,"tornillo" }; //prueba caso no stock
 
 
 	Clientes Ricardo = { "Ricardo","Sanchez","45571328","16:45","Lunes","san lorenzo 565",ric,ric2 };
 
+	int opcion;
 
-	Ricardo.agregarher(gg); //agrego productos y herramientas al carrito
-	Ricardo.agregarart(ll);
-	Ricardo.agregarart(kk);
-	Ricardo.agregarart(ii);
-	Ricardo.agregarart(oo); 
+	
+
+	do 
+	{
+		opcion = menu();
+		switch (opcion) {
+
+		case 1:
+			Ricardo.agregarart(ll);
+			break;
+		case 2:
+			Ricardo.agregarart(kk);
+			break;
+		case 3:
+			Ricardo.agregarart(ii);
+			break;
+		case 4:
+			Ricardo.agregarher(gg);
+			break;
+		case 5:
+			Ricardo.agregarart(oo);
+			break;
+		case 6:
+			cout << "Gracias por comprar con nosotros";
+			break;
+		default:
+			cout << "seleccion invalida";
+			
+		
+}
+
+
+	} while (opcion != 6);
 
 	cout << "Presiona enter para generar presupuesto";
 	getchar();
@@ -82,17 +111,20 @@ int main() {
 }
 
 
-Clientes operator-(Clientes cli, Articulo art) {
+
+int menu() {
+	int opcion;
 	
-	int cant,i=0;
-	cout << "ingrese cantidad a eliminar";
-	cin>>cant;
+	cout << "Opcion 1: Cortina" << endl;
+	cout << "Opcion 2: horno" << endl;
+	cout << "Opcion 3: enchufe" << endl;
+	cout << "Opcion 4: Moladora" << endl;
+	cout << "Opcion 5: tornillo" << endl;
+	cout << "Opcion 6:salir"<<endl;
 
-	list<Articulo>::iterator itArt = cli.get_carritoart().begin();
+	cout << "ingrese su opcion";
+	cin >> opcion;
 
-	for (i = 0; i < cli.get_carritoart().size(); i++,cant--) {
-		cli.get_carritoart().remove_if(art.get_codigo());
-		if (cant == 0)
-			break;
-	} 
-}  
+	return opcion;
+
+}
