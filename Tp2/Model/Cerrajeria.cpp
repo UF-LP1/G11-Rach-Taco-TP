@@ -7,12 +7,15 @@
 
 
 
- Cerrajeria::Cerrajeria(float Precio, bool Cambio, string EstadoArticulo, string Tipodeproducto, bool Stock, string TipoDeLlave, string productoDeCerrajeria) :Articulo(Precio, Cambio, EstadoArticulo,Tipodeproducto, Stock) { //no se xq da error tipo de producto
+ Cerrajeria::Cerrajeria(float Precio, bool Cambio, string EstadoArticulo, string Tipodeproducto, bool Stock,int codigo, string TipoDeLlave, string productoDeCerrajeria) :Articulo(Precio, Cambio, EstadoArticulo,Tipodeproducto, Stock,codigo) { 
      
      this->ProductoCerrajeria = productoDeCerrajeria;
    
 
 }
+ void Cerrajeria::set_ProdCerraj(string prod) {
+     this->ProductoCerrajeria = prod;
+ }
 
 string Cerrajeria::get_tipoDeLlave() {
     return this->tipoDeLlave;

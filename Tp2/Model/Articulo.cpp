@@ -4,14 +4,20 @@
 #include "Articulo.h"
 
 
-Articulo:: Articulo(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock) {
+Articulo:: Articulo(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int code) {
     this->precio = Precio;
     this->cambio = Cambio;
     this->estadoArticulo = EstadoArticulo;
     this->tipoDeProducto = TipoDeProducto;
     this->stock = Stock;
+    this->codigo = code;
 }
-
+int Articulo::get_codigo() {
+    return this->codigo;
+}
+void Articulo::set_codigo(int code) {
+    this->codigo = code;
+}
 float Articulo::get_precio() {
     return this->precio;
 }

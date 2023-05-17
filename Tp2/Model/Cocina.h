@@ -11,11 +11,11 @@ class Cocina: public Articulo {
 public: 
     
 
-Cocina(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string ProductoCocina);
+Cocina(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo, string ProductoCocina);
     
 
     
-
+void set_ProdCocina(string prod);
 string get_ProductoCocina();
 
  ~Cocina();

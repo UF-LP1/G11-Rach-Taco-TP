@@ -22,24 +22,6 @@ void Duenyo::atender_cliente( Clientes) {
     return;
 }
 
-
-float Duenyo::cobrar( Clientes) {
-    return 0.0;
-}
-
-
-float Duenyo::devolverSeguro( Herramientas, Clientes) {
-    return 0.0;
-}
-
-
-void Duenyo::identificarArticulo( Clientes) {
-    return;
-}
-
-
-
-
 string Duenyo::get_nombre() {
     return this->Nombre;
 }

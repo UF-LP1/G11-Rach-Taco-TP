@@ -1,4 +1,24 @@
 ﻿  Main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\list(1597,17): error C2064: el término no se evalúa como una función con 1 argumentos
+C:\Users\rachb\OneDrive\Escritorio\Visual Labo\Tp2\Main.cpp(94): message : Vea la referencia a la creación de una instancia de la función plantilla "auto std::list<Articulo,std::allocator<Articulo>>::remove_if<int>(_Pr1)" que se está compilando
+          with
+          [
+              _Pr1=int
+          ]
+  ArtFerreteria.cpp
+C:\Users\rachb\OneDrive\Escritorio\Visual Labo\Tp2\Model\ArtFerreteria.cpp(7,209): error C2661: 'Articulo::Articulo': ninguna función sobrecargada acepta 5 argumentos
+  Articulo.cpp
+  Banyo.cpp
+C:\Users\rachb\OneDrive\Escritorio\Visual Labo\Tp2\Model\Banyo.cpp(10,189): error C2661: 'Articulo::Articulo': ninguna función sobrecargada acepta 5 argumentos
+  Bazar.cpp
+C:\Users\rachb\OneDrive\Escritorio\Visual Labo\Tp2\Model\Bazar.cpp(6,195): error C2661: 'Articulo::Articulo': ninguna función sobrecargada acepta 5 argumentos
+  Cerrajeria.cpp
+C:\Users\rachb\OneDrive\Escritorio\Visual Labo\Tp2\Model\Cerrajeria.cpp(10,223): error C2661: 'Articulo::Articulo': ninguna función sobrecargada acepta 5 argumentos
   Clientes.cpp
-  Generating Code...
-  Tp2.vcxproj -> C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\x64\Debug\Tp2.exe
+  Cocina.cpp
+C:\Users\rachb\OneDrive\Escritorio\Visual Labo\Tp2\Model\Cocina.cpp(9,192): error C2661: 'Articulo::Articulo': ninguna función sobrecargada acepta 5 argumentos
+  Duenyo.cpp
+  Electricidad.cpp
+C:\Users\rachb\OneDrive\Escritorio\Visual Labo\Tp2\Model\Electricidad.cpp(11,211): error C2661: 'Articulo::Articulo': ninguna función sobrecargada acepta 5 argumentos
+  Herramientas.cpp
+  Generando código...

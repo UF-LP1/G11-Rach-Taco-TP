@@ -11,11 +11,11 @@ class Cerrajeria: public Articulo {
 public: 
     
 
-Cerrajeria(float Precio, bool Cambio, string EstadoArticulo, string tipodeProducto, bool Stock, string TipoDeLlave, string productoDeCerrajeria);
+Cerrajeria(float Precio, bool Cambio, string EstadoArticulo, string tipodeProducto, bool Stock,int codigo, string TipoDeLlave, string productoDeCerrajeria);
     
 string get_tipoDeLlave();
     
-    
+void set_ProdCerraj(string prod);
 string get_ProductoCerrajeria();
 
     

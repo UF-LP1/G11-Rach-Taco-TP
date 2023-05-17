@@ -11,8 +11,9 @@ class Banyo: public Articulo {
 public: 
     
 
- Banyo(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string productodeBanyo);
+ Banyo(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo, string productodeBanyo);
     
+ void set_ProdBanyo(string prod);
 
 string get_ProductoBanyo();
  

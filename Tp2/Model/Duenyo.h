@@ -15,17 +15,6 @@ public:
 
 void atender_cliente( Clientes cli);
     
-
-float cobrar( Clientes cli);
-    
-
-float devolverSeguro( Herramientas her, Clientes cli) ;
-    
-
-void identificarArticulo( Clientes cli);
-    
-
-    
 string get_nombre();
     
 string get_apellido();

@@ -44,6 +44,10 @@ string Clientes::get_diaDeLlegada() {
     return this->diaDeLlegada;
 }
 
+void Clientes::Eliminarart(string)
+{
+}
+
 
 
 
@@ -60,6 +64,9 @@ void Clientes::mostrarFoto() {
 void Clientes::mostrarArtRoto() {
     return;
 }
+
+
+
 void Clientes::agregarart(Articulo art) {
     this->carritoart.push_back(art);
 
@@ -67,6 +74,10 @@ void Clientes::agregarart(Articulo art) {
 void Clientes::agregarher(Herramientas her) {
     this->carritoh.push_back(her);
     
+}
+
+list<Articulo> Clientes::get_carritoart() {
+    return this->carritoart;
 }
 
 float Clientes::generarPresupuesto()
@@ -106,3 +117,6 @@ void Clientes::set_direccion( string Direc) {
  Clientes::~Clientes() {
 
 }
+
+ 
+ 

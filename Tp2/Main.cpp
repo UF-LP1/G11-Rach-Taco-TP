@@ -18,7 +18,7 @@
 #include <iostream>
 using namespace std;
 
-
+Clientes operator-(Clientes cli, Articulo art);
 
 
 
@@ -75,9 +75,24 @@ int main() {
 	Plomero Manuel = { "Manuel","Fernandez","67834163",452,265,true,false };
 	Manuel.trabajar();
 	getchar();
+
+	
 		return 0;
 
 }
 
 
+Clientes operator-(Clientes cli, Articulo art) {
+	
+	int cant,i=0;
+	cout << "ingrese cantidad a eliminar";
+	cin>>cant;
 
+	list<Articulo>::iterator itArt = cli.get_carritoart().begin();
+
+	for (i = 0; i < cli.get_carritoart().size(); i++,cant--) {
+		cli.get_carritoart().remove_if(art.get_codigo());
+		if (cant == 0)
+			break;
+	}
+}

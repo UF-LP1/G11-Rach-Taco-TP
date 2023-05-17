@@ -9,11 +9,11 @@
 
 class ArtFerreteria: public Articulo {
 public: 
-ArtFerreteria(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string prouctodeFerreteria);
+ArtFerreteria(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo, string prouctodeFerreteria);
 
     
 
-    
+void set_ProdFerreteria(string prod);
 string get_ProductoFerreteria();
 
     

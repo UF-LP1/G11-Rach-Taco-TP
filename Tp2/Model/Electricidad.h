@@ -11,9 +11,9 @@ class Electricidad: public Articulo {
 public: 
     
 
-Electricidad(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock, string productoDeElectricidad );
+Electricidad(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo, string productoDeElectricidad );
     
-
+void set_ProdElec(string prod);
 string get_ProductoElectricidad();
 
     

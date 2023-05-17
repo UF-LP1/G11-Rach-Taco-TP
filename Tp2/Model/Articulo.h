@@ -19,9 +19,11 @@ class Articulo{
 public: 
     
 
-Articulo( float Precio, bool Cambio,string EstadoArticulo,   string TipoDeProducto, bool Stock);
+Articulo( float Precio, bool Cambio,string EstadoArticulo,   string TipoDeProducto, bool Stock,int codigo);
     
 float get_precio();
+int get_codigo();
+void set_codigo(int code);
     
 bool get_cambio();
     
@@ -45,6 +47,7 @@ void set_stock(bool sto);
     
 ~Articulo();
 private: 
+    int codigo;
     float precio;
     bool cambio;
     string estadoArticulo;
