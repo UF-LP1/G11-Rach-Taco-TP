@@ -19,7 +19,7 @@
 using namespace std;
 
 Clientes operator-(Clientes cli, Articulo art);
-
+int menu();
 
 
 
@@ -29,15 +29,15 @@ int main() {
 
 	list<Articulo> ric;
 	list<Herramientas> ric2;
-	Banyo ll = { 500,false,"buen estado","Banyo",true,"Cortina" }; //creo productos y herramientas para agregar al carrito
+	Banyo ll = { 500,false,"buen estado","Banyo",true,235,"Cortina"  }; //creo productos y herramientas para agregar al carrito
 
-	Cocina kk = { 10000,false,"Excelente","Cocina",true,"Horno" };
+	Cocina kk = { 10000,false,"Excelente","Cocina",true,632,"Horno" };
 
-	Electricidad ii = { 3,false,"ok","electro",true,"enchufe" };
+	Electricidad ii = { 3,false,"ok","electro",true,233,"enchufe" };
 
 	Herramientas gg = { 421,15000,"pedro","gastada",8 };
 
-	ArtFerreteria oo = { 1,true,"ok","Art.Ferr",false,"tornillo" }; //prueba caso no stock
+	ArtFerreteria oo = { 1,true,"ok","Art.Ferr",false,875,"tornillo" }; //prueba caso no stock
 
 
 	Clientes Ricardo = { "Ricardo","Sanchez","45571328","16:45","Lunes","san lorenzo 565",ric,ric2 };
@@ -94,5 +94,5 @@ Clientes operator-(Clientes cli, Articulo art) {
 		cli.get_carritoart().remove_if(art.get_codigo());
 		if (cant == 0)
 			break;
-	}
-}
+	} 
+}  
