@@ -7,7 +7,7 @@
 
 
 
- Banyo::Banyo(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo, string productodeBanyo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock, codigo) {
+ Banyo::Banyo(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo,int tam, string productodeBanyo) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock, codigo,tam) {
      
      this->ProductoBanyo = productodeBanyo;
   

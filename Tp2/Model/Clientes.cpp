@@ -36,9 +36,7 @@ string Clientes::get_dni() {
 
 
 
-Articulo Clientes::cambiar( Articulo ar) {
-    return ar;
-}
+
 
 
 string Clientes::get_horaDeLlegada() {
@@ -95,7 +93,17 @@ void Clientes::operator=(Articulo art) {
 
 }
 
-
+//void Clientes::cambiarart(Articulo art) {
+//    int opcion, i = 0;
+//    list<Articulo>::iterator itArt = this->get_carritoart().begin();
+//    cout << "Elija el articulo que quiere cambiar:" << endl;
+//    for (i = 0, itArt; itArt != this->get_carritoart().end(); itArt++, i++) {
+//        cout << i << ")" << itArt->get_tipoDeProducto() << ", codigo:" << itArt->get_codigo() << endl;
+//
+//    }
+//    cin >> opcion;
+//
+//}
 float Clientes::generarPresupuesto()
 {
    float presupuestoart=0;
@@ -137,9 +145,7 @@ int Clientes::get_dinero() {
     return this -> dinero;
 }
 
-void Clientes::cambiarart() {
 
-}
 
 void Clientes::repuesto() {
 

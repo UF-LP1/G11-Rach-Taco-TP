@@ -7,7 +7,7 @@
 
 
 
- Cerrajeria::Cerrajeria(float Precio, bool Cambio, string EstadoArticulo, string Tipodeproducto, bool Stock,int codigo, string TipoDeLlave, string productoDeCerrajeria) :Articulo(Precio, Cambio, EstadoArticulo,Tipodeproducto, Stock,codigo) { 
+ Cerrajeria::Cerrajeria(float Precio, bool Cambio, string EstadoArticulo, string Tipodeproducto, bool Stock,int codigo,int tam, string TipoDeLlave, string productoDeCerrajeria) :Articulo(Precio, Cambio, EstadoArticulo,Tipodeproducto, Stock,codigo,tam) { 
      
      this->ProductoCerrajeria = productoDeCerrajeria;
    

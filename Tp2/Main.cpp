@@ -25,22 +25,23 @@ int menu();
 
 int main() {
 	float pre;
-
+	Articulo ret = { 500,false,"buen estado","Banyo",true,235,54 };
 
 	list<Articulo> ric;
 	list<Herramientas> ric2;
-	Banyo ll = { 500,false,"buen estado","Banyo",true,235,"Cortina"  }; //creo productos y herramientas para agregar al carrito
+	Banyo ll = { 500,false,"buen estado","Banyo",true,235,180,"Cortina"  }; //creo productos y herramientas para agregar al carrito
 
-	Cocina kk = { 10000,false,"Excelente","Cocina",true,632,"Horno" };
+	Cocina kk = { 10000,false,"Excelente","Cocina",true,632,70,"Horno" };
 
-	Electricidad ii = { 3,false,"ok","electro",true,233,"enchufe" };
+	Electricidad ii = { 3,false,"ok","electro",true,233,20,"enchufe" };
 
 	Herramientas gg = { 421,15000,"Moladora","gastada",8 };
 
-	ArtFerreteria oo = { 1,true,"ok","Art.Ferr",false,875,"tornillo" }; //prueba caso no stock
+
+	ArtFerreteria oo = { 1,true,"ok","Art.Ferr",false,875,10,"tornillo" }; //prueba caso no stock
 
 
-	Clientes Ricardo = { "Ricardo","Sanchez","45571328","16:45","Lunes","san lorenzo 565",ric,ric2 };
+	Clientes Ricardo = { "Ricardo","Sanchez","45571328","16:45","Lunes","san lorenzo 565",ric,ric2,4 };
 
 	int opcion;
 
@@ -75,7 +76,7 @@ int main() {
 			cout << "Gracias por comprar con nosotros"<<endl;
 			break;
 		default:
-			cout << "seleccion invalida"<<endl;
+			cout << "Seleccion invalida"<<endl;
 			
 		
 }
@@ -83,13 +84,15 @@ int main() {
 
 	} while (opcion != 6);
 
+
+	getchar();
 	cout << "Presiona enter para generar presupuesto"<<endl;
 	getchar();
 
 	pre=Ricardo.generarPresupuesto(); //pruebo generar presupuesto
 
 	
-	cout << "su presupusto es:" << pre<<endl;
+	cout << "Su presupusto es:$" << pre<<endl;
 
 	cout << "Presiona enter para funcion polimorfismo Cerrajero";
 	getchar();
@@ -120,14 +123,14 @@ int main() {
 int menu() {
 	int opcion;
 	
-	cout << "Opcion 1: Cortina" << endl;
-	cout << "Opcion 2: horno" << endl;
-	cout << "Opcion 3: enchufe" << endl;
+	cout << "Opcion 1: Cortina" <<"(codigo:235)"<< endl;
+	cout << "Opcion 2: horno" << "(codigo:632)" << endl;
+	cout << "Opcion 3: enchufe" << "(codigo:233)" << endl;
 	cout << "Opcion 4: Moladora" << endl;
-	cout << "Opcion 5: tornillo" << endl;
+	cout << "Opcion 5: tornillo" << "(codigo:875)" << endl;
 	cout << "Opcion 6:salir"<<endl;
 
-	cout << "ingrese su opcion";
+	cout << "Ingrese su opcion: ";
 	cin >> opcion;
 
 	return opcion;

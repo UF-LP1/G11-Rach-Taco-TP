@@ -11,7 +11,7 @@ class Cocina: public Articulo {
 public: 
     
 
-Cocina(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo, string ProductoCocina);
+Cocina(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo, int tam, string ProductoCocina);
     
 
     

@@ -11,7 +11,7 @@ class Cerrajeria: public Articulo {
 public: 
     
 
-Cerrajeria(float Precio, bool Cambio, string EstadoArticulo, string tipodeProducto, bool Stock,int codigo, string TipoDeLlave, string productoDeCerrajeria);
+Cerrajeria(float Precio, bool Cambio, string EstadoArticulo, string tipodeProducto, bool Stock,int codigo,int tam, string TipoDeLlave, string productoDeCerrajeria);
     
 string get_tipoDeLlave();
     

@@ -6,7 +6,7 @@
 
 
 
- Cocina::Cocina(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo, string productoDeCocina) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock,codigo) {
+ Cocina::Cocina(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo,int tam, string productoDeCocina) :Articulo(Precio, Cambio, EstadoArticulo, TipoDeProducto, Stock,codigo,tam) {
      this->ProductoCocina = productoDeCocina;
 
 }

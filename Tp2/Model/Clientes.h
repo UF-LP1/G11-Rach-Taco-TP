@@ -33,8 +33,6 @@ string get_horaDeLlegada();
 string get_diaDeLlegada();
     
 
-void Eliminarart(string art);
-
     
 string get_direccion();
     
@@ -57,7 +55,7 @@ list<Articulo> get_carritoart();
 
 void operator=(Articulo art);
 
-void cambiarart(int codigo);
+void cambiarart(Articulo art);
 void repuesto();
 ~Clientes();
 private: 

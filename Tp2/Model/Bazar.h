@@ -11,7 +11,7 @@ class Bazar: public Articulo {
 public: 
     
 
-Bazar(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo, string prouctodeBazar);
+Bazar(float Precio, bool Cambio, string EstadoArticulo, string TipoDeProducto, bool Stock,int codigo,int tam, string prouctodeBazar);
     
 
 void set_ProdBazar(string prod);
