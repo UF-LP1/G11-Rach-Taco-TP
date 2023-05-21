@@ -18,7 +18,7 @@ class Clientes {
 public: 
     
 
-Clientes(string nombre,string apellido,const string dni, string Hora_llegada ,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her);
+Clientes(string nombre,string apellido,const string dni, string Hora_llegada ,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her,int cash);
 
 
 string get_nombre();
@@ -43,6 +43,9 @@ void mostrarFoto();
 void mostrarArtRoto();
 float generarPresupuesto();
 
+int get_dinero();
+void set_dinero( int cash);
+
     
 
 void set_direccion( string dire);
@@ -53,6 +56,9 @@ void agregarher(Herramientas her);
 list<Articulo> get_carritoart();
 
 void operator=(Articulo art);
+
+void cambiarart(int codigo);
+void repuesto();
 ~Clientes();
 private: 
     string Nombre;
@@ -63,6 +69,7 @@ private:
     string direccion;
     list<Articulo>carritoart; 
     list<Herramientas>carritoh;
+    int dinero;
     
    
 

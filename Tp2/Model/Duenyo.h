@@ -18,6 +18,8 @@ void atender_cliente( Clientes cli);
 string get_nombre();
     
 string get_apellido();
+
+static int get_cantclientes();
     
 string get_dni();
 void set_nombre(string name);

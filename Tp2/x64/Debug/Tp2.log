@@ -1,9 +1,3 @@
 ﻿  Main.cpp
-C:\Users\rachb\OneDrive\Escritorio\Visual Labo\Tp2\Model\Duenyo.h(13,8): warning C4042: 'cantc': tiene una clase de almacenamiento incorrecta
-  Clientes.cpp
-  Duenyo.cpp
-C:\Users\rachb\OneDrive\Escritorio\Visual Labo\Tp2\Model\Duenyo.h(13,8): warning C4042: 'cantc': tiene una clase de almacenamiento incorrecta
-C:\Users\rachb\OneDrive\Escritorio\Visual Labo\Tp2\Model\Duenyo.cpp(10,75): warning C4042: 'cantc': tiene una clase de almacenamiento incorrecta
-  Herramientas.cpp
-  Generando código...
-  Tp2.vcxproj -> C:\Users\rachb\OneDrive\Escritorio\Visual Labo\Tp2\x64\Debug\Tp2.exe
+C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\Model\Duenyo.h(13,8): warning C4042: 'cantc': has bad storage class
+  Tp2.vcxproj -> C:\Users\Luis\Desktop\Facu stefan\Labo de programacion 1\G11-Rach-Taco-TP\Tp2\x64\Debug\Tp2.exe

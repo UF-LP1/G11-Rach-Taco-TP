@@ -53,24 +53,29 @@ int main() {
 
 		case 1:
 			Ricardo.agregarart(ll);
+			system("cls");
 			break;
 		case 2:
 			Ricardo.agregarart(kk);
+			system("cls");
 			break;
 		case 3:
 			Ricardo.agregarart(ii);
+			system("cls");
 			break;
 		case 4:
 			Ricardo.agregarher(gg);
+			system("cls");
 			break;
 		case 5:
 			Ricardo.agregarart(oo);
+			system("cls");
 			break;
 		case 6:
-			cout << "Gracias por comprar con nosotros";
+			cout << "Gracias por comprar con nosotros"<<endl;
 			break;
 		default:
-			cout << "seleccion invalida";
+			cout << "seleccion invalida"<<endl;
 			
 		
 }
@@ -78,7 +83,7 @@ int main() {
 
 	} while (opcion != 6);
 
-	cout << "Presiona enter para generar presupuesto";
+	cout << "Presiona enter para generar presupuesto"<<endl;
 	getchar();
 
 	pre=Ricardo.generarPresupuesto(); //pruebo generar presupuesto

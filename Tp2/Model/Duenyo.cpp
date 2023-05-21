@@ -12,10 +12,10 @@ Duenyo::Duenyo(string name, string ape, const string DNI, static int cantc) :dni
      this->Apellido = ape;
      cantclientes++;
 }
-//int Duenyo::get_cantclientes() {
-//    return this->canr
-//
-//}
+int Duenyo::get_cantclientes() {
+    return cantclientes;
+
+}
 void Duenyo::set_nombre(string name) {
     this->Nombre = name;
 }

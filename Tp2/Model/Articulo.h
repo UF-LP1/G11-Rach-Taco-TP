@@ -1,6 +1,4 @@
-/**
- * Project Untitled
- */
+
 
 
 #ifndef _ARTICULO_H
@@ -19,8 +17,13 @@ class Articulo{
 public: 
     
 
-Articulo( float Precio, bool Cambio,string EstadoArticulo,   string TipoDeProducto, bool Stock,int codigo);
+Articulo( float Precio, bool Cambio,string EstadoArticulo,   string TipoDeProducto, bool Stock,int codigo, int tam);
     
+
+void set_tamanyo(int tam);
+
+int get_tamanyo();
+
 float get_precio();
 int get_codigo();
 void set_codigo(int code);
@@ -53,6 +56,7 @@ private:
     string estadoArticulo;
     string tipoDeProducto;
     bool stock;
+    int tamanyo;
     friend class ArtFerreteria;
     friend class Banyo;
     friend class Bazar;
@@ -60,5 +64,4 @@ private:
     friend class Cocina;
     friend class Electricidad;
 };
-
 #endif //_ARTICULO_H

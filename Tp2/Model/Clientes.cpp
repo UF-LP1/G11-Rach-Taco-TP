@@ -5,10 +5,11 @@
 
 
 
-Clientes:: Clientes(string nombre,string apellido,const string dni, string Hora_llegada,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her): horaDeLlegada(Hora_llegada),diaDeLlegada(Dia_llegada),DNI(dni) {
+Clientes:: Clientes(string nombre,string apellido,const string dni, string Hora_llegada,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her, int cash): horaDeLlegada(Hora_llegada),diaDeLlegada(Dia_llegada),DNI(dni) {
     this->direccion = Direccion;
     this->Nombre = nombre;
     this->Apellido = apellido;
+    this->dinero = cash;
     
 
 }
@@ -16,15 +17,19 @@ Clientes:: Clientes(string nombre,string apellido,const string dni, string Hora_
 string Clientes::get_nombre() {
     return this->Nombre;
 }
+
 void Clientes::set_nombre(string nom) {
     this->Nombre = nom;
 }
+
 string Clientes::get_apellido() {
     return this->Apellido;
 }
+
 void Clientes::set_apellido(string ape) {
     this->Apellido = ape;
 }
+
 string Clientes::get_dni() {
     return this->DNI;
 }
@@ -45,9 +50,7 @@ string Clientes::get_diaDeLlegada() {
     return this->diaDeLlegada;
 }
 
-void Clientes::Eliminarart(string)
-{
-}
+
 
 
 
@@ -80,6 +83,8 @@ void Clientes::agregarher(Herramientas her) {
 list<Articulo> Clientes::get_carritoart() {
     return this->carritoart;
 }
+
+
 void Clientes::operator=(Articulo art) {
     int i = 0;
     list<Articulo>::iterator itArt = this->carritoart.begin();
@@ -89,6 +94,8 @@ void Clientes::operator=(Articulo art) {
     this->carritoart.erase(itArt);
 
 }
+
+
 float Clientes::generarPresupuesto()
 {
    float presupuestoart=0;
@@ -122,6 +129,21 @@ void Clientes::set_direccion( string Direc) {
     this->direccion=Direc;
 }
 
+void Clientes::set_dinero(int cash) {
+    this->dinero = cash;
+}
+
+int Clientes::get_dinero() {
+    return this -> dinero;
+}
+
+void Clientes::cambiarart() {
+
+}
+
+void Clientes::repuesto() {
+
+}
 
  Clientes::~Clientes() {
 
