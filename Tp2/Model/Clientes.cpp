@@ -99,8 +99,22 @@ float Clientes::operator=(int code) {
     return 0;
 }
 
+bool Clientes::checkearestado(int code) {
+    int i = 0;
+    bool estado;
+    list<Articulo>::iterator itArt = this->carritoart.begin();
+
+    for (i = 0; i < this->carritoart.size(); itArt++, i++) {
+        if (code == itArt->get_codigo()) {
+            estado = itArt->get_cambio();
+            return estado;
+        }
+    }
+    return false;
+}
+
 void Clientes::cambiarart() {
-    Banyo ll = { 500,false,"buen estado","Banyo",true,235,180,"Cortina" };
+    Banyo ll = { 500,true,"buen estado","Banyo",true,235,180,"Cortina" };
 
     Cocina kk = { 10000,false,"Excelente","Cocina",true,632,70,"Horno" };
 
@@ -108,71 +122,79 @@ void Clientes::cambiarart() {
 
     ArtFerreteria oo = { 1,true,"ok","Art.Ferr",false,875,10,"tornillo" };
 
-
+    bool estado=true;
     int opcion, opcion2, i = 0;
     float price=0, precionuevo=0;
 
     list<Articulo>::iterator itArt = this->carritoart.begin();
 
-    cout << "Ingrese le codigo del objeto a cambiar:" << endl;
+    cout << "Ingrese el codigo del objeto a cambiar:" << endl;
 
     for (i = 0; i < this->get_carritoart().size(); itArt++, i++) {
         cout << i << ")" << itArt->get_tipoDeProducto() << ", codigo:" << itArt->get_codigo() << endl;
     }
     cin >> opcion;
+    
+    estado = Clientes::checkearestado(opcion);
+    if (estado == false) {
 
-    price = Clientes::operator=(opcion);
+        cout << "No se puede cambiar ese producto" << endl;
 
-    cout << "Opcion 1: Cortina" << "(codigo:235)" << endl;
-    cout << "Opcion 2: horno" << "(codigo:632)" << endl;
-    cout << "Opcion 3: enchufe" << "(codigo:233)" << endl;
-    cout << "Opcion 4: tornillo" << "(codigo:875)" << endl;
-    cout << "Opcion 5:salir" << endl;
-
-    cout << "Ingrese su opcion: ";
-    cin >> opcion2;
-
-
-    switch (opcion2) {
-
-    case 1:
-        this->agregarart(ll);
-        precionuevo = ll.get_precio();
-        system("cls");
-        break;
-    case 2:
-        this->agregarart(kk);
-        precionuevo = kk.get_precio();
-        system("cls");
-        break;
-    case 3:
-        this->agregarart(ii);
-        precionuevo = ii.get_precio();
-        system("cls");
-        break;
-    case 4:
-        this->agregarart(oo);
-        precionuevo = oo.get_precio();
-        system("cls");
-        break;
-    case 5:
-        cout << "Gracias por comprar con nosotros" << endl;
-        break;
-    default:
-        cout << "Seleccion invalida" << endl;
-    }
-    if (price > precionuevo) {
-        this->dinero = this->dinero + (price - precionuevo);
-        cout << "Se le devolvera" << price - precionuevo;
-    }
-    else if (price == precionuevo) {
-        cout << "Es el mismo precio";
+        return;
     }
     else {
-        this->dinero = this->dinero + (price - precionuevo);
-        cout << "Tendra que abonar " << abs(price - precionuevo)<<endl;
-    }
+        price = Clientes::operator=(opcion);
 
+        cout << "Opcion 1: Cortina" << "(codigo:235)" << endl;
+        cout << "Opcion 2: horno" << "(codigo:632)" << endl;
+        cout << "Opcion 3: enchufe" << "(codigo:233)" << endl;
+        cout << "Opcion 4: tornillo" << "(codigo:875)" << endl;
+        cout << "Opcion 5:salir" << endl;
+
+        cout << "Ingrese su opcion: ";
+        cin >> opcion2;
+
+
+        switch (opcion2) {
+
+        case 1:
+            this->agregarart(ll);
+            precionuevo = ll.get_precio();
+            system("cls");
+            break;
+        case 2:
+            this->agregarart(kk);
+            precionuevo = kk.get_precio();
+            system("cls");
+            break;
+        case 3:
+            this->agregarart(ii);
+            precionuevo = ii.get_precio();
+            system("cls");
+            break;
+        case 4:
+            this->agregarart(oo);
+            precionuevo = oo.get_precio();
+            system("cls");
+            break;
+        case 5:
+            cout << "Gracias por comprar con nosotros" << endl;
+            break;
+        default:
+            cout << "Seleccion invalida" << endl;
+        }
+        if (price > precionuevo) {
+            this->dinero = this->dinero + (price - precionuevo);
+            cout << "Se le devolvera" << price - precionuevo;
+        }
+        else if (price == precionuevo) {
+            cout << "Es el mismo precio";
+        }
+        else {
+            this->dinero = this->dinero + (price - precionuevo);
+            cout << "Tendra que abonar " << abs(price - precionuevo) << endl;
+        }
+    }
 
 }
 float Clientes::generarPresupuesto()

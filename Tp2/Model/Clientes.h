@@ -45,6 +45,8 @@ void mostrarFoto();
     
 void mostrarArtRoto();
 
+bool checkearestado(int code);
+
 float generarPresupuesto();
 
 float get_dinero();

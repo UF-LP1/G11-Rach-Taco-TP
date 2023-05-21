@@ -30,7 +30,7 @@ int main() {
 
 	list<Articulo> ric;
 	list<Herramientas> ric2;
-	Banyo ll = { 500,false,"buen estado","Banyo",true,235,180,"Cortina"  }; //creo productos y herramientas para agregar al carrito
+	Banyo ll = { 500,true,"buen estado","Banyo",true,235,180,"Cortina"  }; //creo productos y herramientas para agregar al carrito
 
 	Cocina kk = { 10000,false,"Excelente","Cocina",true,632,70,"Horno" };
 
