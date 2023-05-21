@@ -41,9 +41,6 @@ string get_diaDeLlegada();
     
 string get_direccion();
     
-void mostrarFoto();
-    
-void mostrarArtRoto();
 
 bool checkearestado(int code);
 

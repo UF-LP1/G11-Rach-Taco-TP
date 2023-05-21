@@ -58,16 +58,6 @@ string Clientes::get_direccion() {
 }
 
 
-void Clientes::mostrarFoto() {
-    return;
-}
-
-
-void Clientes::mostrarArtRoto() {
-    return;
-}
-
-
 
 void Clientes::agregarart(Articulo art) {
     this->carritoart.push_back(art);
