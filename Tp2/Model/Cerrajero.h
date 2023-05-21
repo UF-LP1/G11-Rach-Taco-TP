@@ -23,6 +23,7 @@ void trabajar(); //metodo polimorfico de Empleado
     
 string get_tipoDeLlave();
 
+void set_tipoDeLLave(string llave);
     
     ~Cerrajero();
 private: 

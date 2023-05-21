@@ -94,6 +94,9 @@
  string Cerrajero::get_tipoDeLlave() {
     return this->tipoDeLLave;
 }
+ void Cerrajero:: set_tipoDeLLave(string llave) {
+     this->tipoDeLLave = llave;
+ }
 
  Cerrajero::~Cerrajero() {
 

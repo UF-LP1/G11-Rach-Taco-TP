@@ -20,7 +20,7 @@ void set_cantidadPedidos(unsigned int cant);
 void trabajar(); //metodo polimorfico de Empleado
     
 string get_vehiculo();
-    
+
 unsigned int get_cantPedidos();
     
 

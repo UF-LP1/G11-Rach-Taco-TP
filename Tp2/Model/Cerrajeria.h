@@ -14,7 +14,7 @@ public:
 Cerrajeria(float Precio, bool Cambio, string EstadoArticulo, string tipodeProducto, bool Stock,int codigo,int tam, string TipoDeLlave, string productoDeCerrajeria);
     
 string get_tipoDeLlave();
-    
+void set_tipoDeLLave(string llave);
 void set_ProdCerraj(string prod);
 string get_ProductoCerrajeria();
 
