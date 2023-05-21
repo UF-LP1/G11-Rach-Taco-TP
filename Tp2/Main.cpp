@@ -25,6 +25,7 @@ int menu();
 
 int main() {
 	float pre;
+	int decision;
 	Articulo ret = { 500,false,"buen estado","Banyo",true,235,54 };
 
 	list<Articulo> ric;
@@ -83,7 +84,14 @@ int main() {
 
 
 	} while (opcion != 6);
+	getchar();
 
+	
+
+	cout << "Quiere cambiar un producto? (1 para si, 0 para no)"<<endl;
+	cin >> decision;
+	if(decision==1)
+	Ricardo.cambiarart();
 
 	getchar();
 	cout << "Presiona enter para generar presupuesto"<<endl;

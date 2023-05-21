@@ -5,7 +5,7 @@
 
 
 
-Clientes:: Clientes(string nombre,string apellido,const string dni, string Hora_llegada,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her, int cash): horaDeLlegada(Hora_llegada),diaDeLlegada(Dia_llegada),DNI(dni) {
+Clientes:: Clientes(string nombre,string apellido,const string dni, string Hora_llegada,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her, float cash): horaDeLlegada(Hora_llegada),diaDeLlegada(Dia_llegada),DNI(dni) {
     this->direccion = Direccion;
     this->Nombre = nombre;
     this->Apellido = apellido;
@@ -83,27 +83,98 @@ list<Articulo> Clientes::get_carritoart() {
 }
 
 
-void Clientes::operator=(Articulo art) {
+float Clientes::operator=(int code) {
     int i = 0;
+    float price;
     list<Articulo>::iterator itArt = this->carritoart.begin();
-    while (itArt->get_codigo() != art.get_codigo()) {
-        itArt++;
+   
+    for (i = 0;i<this->get_carritoart().size(); itArt++, i++) {
+        if (code == itArt->get_codigo()) {
+            price = itArt->get_precio(); //me guardo el precio para calcular diferencia
+            this->carritoart.erase(itArt);
+            return price;
+        }
     }
-    this->carritoart.erase(itArt);
-
+    cout << "No se encontro el articulo" << endl;
+    return 0;
 }
 
-//void Clientes::cambiarart(Articulo art) {
-//    int opcion, i = 0;
-//    list<Articulo>::iterator itArt = this->get_carritoart().begin();
-//    cout << "Elija el articulo que quiere cambiar:" << endl;
-//    for (i = 0, itArt; itArt != this->get_carritoart().end(); itArt++, i++) {
-//        cout << i << ")" << itArt->get_tipoDeProducto() << ", codigo:" << itArt->get_codigo() << endl;
-//
-//    }
-//    cin >> opcion;
-//
-//}
+void Clientes::cambiarart() {
+    Banyo ll = { 500,false,"buen estado","Banyo",true,235,180,"Cortina" };
+
+    Cocina kk = { 10000,false,"Excelente","Cocina",true,632,70,"Horno" };
+
+    Electricidad ii = { 3,false,"ok","electro",true,233,20,"enchufe" };
+
+    ArtFerreteria oo = { 1,true,"ok","Art.Ferr",false,875,10,"tornillo" };
+
+
+    int opcion, opcion2, i = 0;
+    float price=0, precionuevo=0;
+
+    list<Articulo>::iterator itArt = this->carritoart.begin();
+
+    cout << "Ingrese le codigo del objeto a cambiar:" << endl;
+
+    for (i = 0; i < this->get_carritoart().size(); itArt++, i++) {
+        cout << i << ")" << itArt->get_tipoDeProducto() << ", codigo:" << itArt->get_codigo() << endl;
+    }
+    cin >> opcion;
+
+    price = Clientes::operator=(opcion);
+
+    cout << "Opcion 1: Cortina" << "(codigo:235)" << endl;
+    cout << "Opcion 2: horno" << "(codigo:632)" << endl;
+    cout << "Opcion 3: enchufe" << "(codigo:233)" << endl;
+    cout << "Opcion 4: tornillo" << "(codigo:875)" << endl;
+    cout << "Opcion 5:salir" << endl;
+
+    cout << "Ingrese su opcion: ";
+    cin >> opcion2;
+
+
+    switch (opcion2) {
+
+    case 1:
+        this->agregarart(ll);
+        precionuevo = ll.get_precio();
+        system("cls");
+        break;
+    case 2:
+        this->agregarart(kk);
+        precionuevo = kk.get_precio();
+        system("cls");
+        break;
+    case 3:
+        this->agregarart(ii);
+        precionuevo = ii.get_precio();
+        system("cls");
+        break;
+    case 4:
+        this->agregarart(oo);
+        precionuevo = oo.get_precio();
+        system("cls");
+        break;
+    case 5:
+        cout << "Gracias por comprar con nosotros" << endl;
+        break;
+    default:
+        cout << "Seleccion invalida" << endl;
+    }
+    if (price > precionuevo) {
+        this->dinero = this->dinero + (price - precionuevo);
+        cout << "Se le devolvera" << price - precionuevo;
+    }
+    else if (price == precionuevo) {
+        cout << "Es el mismo precio";
+    }
+    else {
+        this->dinero = this->dinero + (price - precionuevo);
+        cout << "Tendra que abonar " << abs(price - precionuevo)<<endl;
+    }
+
+
+}
 float Clientes::generarPresupuesto()
 {
    float presupuestoart=0;
@@ -137,19 +208,17 @@ void Clientes::set_direccion( string Direc) {
     this->direccion=Direc;
 }
 
-void Clientes::set_dinero(int cash) {
+void Clientes::set_dinero(float cash) {
     this->dinero = cash;
 }
 
-int Clientes::get_dinero() {
+float Clientes::get_dinero() {
     return this -> dinero;
 }
 
 
 
-void Clientes::repuesto() {
 
-}
 
  Clientes::~Clientes() {
 

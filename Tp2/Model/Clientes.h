@@ -8,6 +8,11 @@
 using namespace std;
 #include "Empleado.h"
 #include "Articulo.h"
+#include "Banyo.h"
+#include "ArtFerreteria.h"
+#include"Bazar.h"
+#include "Electricidad.h"
+#include "Cocina.h"
 #include "Herramientas.h"
 #include <list>
 #include<iterator>
@@ -18,7 +23,7 @@ class Clientes {
 public: 
     
 
-Clientes(string nombre,string apellido,const string dni, string Hora_llegada ,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her,int cash);
+Clientes(string nombre,string apellido,const string dni, string Hora_llegada ,  string Dia_llegada,  string Direccion, list<Articulo>art, list<Herramientas> her,float cash);
 
 
 string get_nombre();
@@ -26,7 +31,7 @@ void set_nombre(string name);
 string get_apellido();
 void set_apellido(string ape);
 string get_dni();
-Articulo cambiar( Articulo);
+
     
 string get_horaDeLlegada();
     
@@ -39,10 +44,11 @@ string get_direccion();
 void mostrarFoto();
     
 void mostrarArtRoto();
+
 float generarPresupuesto();
 
-int get_dinero();
-void set_dinero( int cash);
+float get_dinero();
+void set_dinero( float cash);
 
     
 
@@ -53,10 +59,9 @@ void agregarher(Herramientas her);
 
 list<Articulo> get_carritoart();
 
-void operator=(Articulo art);
+float operator=(int code);
 
-void cambiarart(Articulo art);
-void repuesto();
+void cambiarart();
 ~Clientes();
 private: 
     string Nombre;
@@ -67,7 +72,7 @@ private:
     string direccion;
     list<Articulo>carritoart; 
     list<Herramientas>carritoh;
-    int dinero;
+    float dinero;
     
    
 
